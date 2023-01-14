@@ -9,96 +9,99 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
-<body>
-  <header>
-    <a>
-      <svg class='' width='' height=''>
-        <use xlink:href='img/sprite.svg#'></use>
-      </svg>
-    </a>
-    <div>
-      <p>Новосибирск</p>
-      <h1>Питомник Мейн-Кунов</h1>
-      <p>Первый питомник с расширенным спектром услуг</p>
-      <a href="#">Смотреть котиков</a>
+<body class="page-body">
+  <header class="page-header">
+    <div class="container">
+      <a class="logo">
+        <svg class='logo__svg' width='' height=''>
+          <use xlink:href='img/sprite.svg#'></use>
+        </svg>
+      </a>
+      <div class="page-header__content">
+        <p class="section-description">Новосибирск</p>
+        <h1 class="main-title">Питомник Мейн-Кунов</h1>
+        <p class="section-description">Первый питомник с расширенным спектром услуг</p>
+        <a class="main-button" href="#">Смотреть котиков</a>
+      </div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span>Вконтакте</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span>Twitter</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span>Facebook</span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <ul>
-      <li>
-        <a href="#">
-          <span>Вконтакте</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Twitter</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>Facebook</span>
-        </a>
-      </li>
-    </ul>
   </header>
 
-  <main>
-    <section>
-      <div>
-        <h2>Питомцы</h2>
-        <p>Все представители нашего питомника имеют ветеринарный паспорт
+  <main class="page-main">
+    <section class="pets">
+      <div class="container">
+        <h2 class="secondary-title">Питомцы</h2>
+        <p class="section-description">Все представители нашего питомника имеют ветеринарный паспорт
           с отметками о прививках и документ с родословной</p>
-        <div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="gallery">
+          <ul class="gallery-list">
+            <li class="gallery-list__item">Коты</li>
+            <li class="gallery-list__item">Кошки</li>
+            <li class="gallery-list__item">Котята</li>
           </ul>
-          <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+          <div class="gallery-images">
+            <img class="gallery-images__item" src="" alt="">
+            <img class="gallery-images__item" src="" alt="">
+            <img class="gallery-images__item" src="" alt="">
           </div>
         </div>
-        <a href="">Смотреть больше</a>
+        <a class="main-button" href="#">Смотреть больше</a>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Особенности породы</h2>
-        <p>Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом этого питомца,
+    <section class="features">
+      <div class="container">
+        <h2 class="secondary-title">Особенности породы</h2>
+        <p class="section-description">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом
+          этого питомца,
           вы получите умное животное, которому нет равных </p>
-        <ul>
-          <li>Легко уживается в семьях с детьми или другими животными</li>
-          <li>Внешний вид этой кошки похож на дикую рысь</li>
-          <li>Выполняет команды как дрессированная собака</li>
-          <li>Вес может достигать 12 кг, а длина 1 м</li>
+        <ul class="features-list">
+          <li class="features-list__item">Легко уживается в семьях с детьми или другими животными</li>
+          <li class="features-list__item">Внешний вид этой кошки похож на дикую рысь</li>
+          <li class="features-list__item">Выполняет команды как дрессированная собака</li>
+          <li class="features-list__item">Вес может достигать 12 кг, а длина 1 м</li>
         </ul>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Почему именно мы?</h2>
-        <p>Приобретая животное в нашем питомнике, вы получите</p>
-        <ul>
-          <li>
-            <a href="#">
-              <svg class='' width='' height=''>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="secondary-title">Почему именно мы?</h2>
+        <p class="section-description">Приобретая животное в нашем питомнике, вы получите</p>
+        <ul class="advantages-list">
+          <li class="advantages-list__item">
+            <a class="advantages-list__link" href="#">
+              <svg class='advantages-list__svg' width='' height=''>
                 <use xlink:href='img/sprite.svg#'></use>
               </svg>
               Бесплатное ветеринарное обслуживание 5 лет</a>
           </li>
-          <li>
-            <a href="#">
-              <svg class='' width='' height=''>
+          <li class="advantages-list__item">
+            <a class="advantages-list__link" href="#">
+              <svg class='advantages-list__svg' width='' height=''>
                 <use xlink:href='img/sprite.svg#'></use>
               </svg>
               Консультирование по любому вопросу 24 часа в сутки</a>
           </li>
-          <li>
-            <a href="#">
-              <svg class='' width='' height=''>
+          <li class="advantages-list__item">
+            <a class="advantages-list__link" href="#">
+              <svg class='advantages-list__svg' width='' height=''>
                 <use xlink:href='img/sprite.svg#'></use>
               </svg>
               Индивидуальный подбор питания для вашего кота</a>
@@ -107,77 +110,81 @@
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2></h2>
-        <ul>
-          <li>
-            <h3>Шерсть</h3>
-            <p>Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет блестящей, мягкой и послушной
+    <section class="care">
+      <div class="container">
+        <h2 class="secondary-title">Об уходе за Мейн-Куном</h2>
+        <ul class="care-list">
+          <li class="care-list__item">
+            <h3 class="care-list__title">Шерсть</h3>
+            <p class="care-list__desc">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет
+              блестящей, мягкой и послушной
             </p>
           </li>
-          <li>
-            <h3>Когти</h3>
-            <p>Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать идеальную когтеточку</p>
+          <li class="care-list__item">
+            <h3 class="care-list__title">Когти</h3>
+            <p class="care-list__desc">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать
+              идеальную когтеточку</p>
           </li>
-          <li>
-            <h3>Уши и глаза</h3>
-            <p>Владельцам котов необходимо регулярно осматривать
+          <li class="care-list__item">
+            <h3 class="care-list__title">Уши и глаза</h3>
+            <p class="care-list__desc">Владельцам котов необходимо регулярно осматривать
               ушки и глазасвоих питомцев, ведь это может быть
               признаками заболевания</p>
           </li>
-          <li>
-            <h3>Питание</h3>
-            <p>В нашем питомнике существует два подхода: натуральное питание и питание промышленными кормами, но
+          <li class="care-list__item">
+            <h3 class="care-list__title">Питание</h3>
+            <p class="care-list__desc">В нашем питомнике существует два подхода: натуральное питание и питание
+              промышленными кормами, но
               выбирать только вам</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Наша команда</h2>
-        <p>Все сотрудники нашего питомника дипломированые специалисты
+    <section class="our-team">
+      <div class="container">
+        <h2 class="secondary-title">Наша команда</h2>
+        <p class="section-description">Все сотрудники нашего питомника дипломированые специалисты
           в области фелинологии и ветеринарии</p>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Вопрос-Ответ</h2>
-        <p>Мы ответим на самые популярные ваши вопросы</p>
+    <section class="faq">
+      <div class="container">
+        <h2 class="secondary-title">Вопрос-Ответ</h2>
+        <p class="section-description">Мы ответим на самые популярные ваши вопросы</p>
       </div>
     </section>
 
-    <section>
-      <div>
-        <h2>Отзывы</h2>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="secondary-title">Отзывы</h2>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <div>
-      <a href="#">
-        <svg class='' width='' height=''>
+  <footer class="page-footer">
+    <div class="container">
+      <a class="logo" href="#">
+        <svg class='logo__svg' width='' height=''>
           <use xlink:href='img/sprite.svg#'></use>
         </svg>
       </a>
-      <ul>
-        <li>
-          <a href="#">Facebook</a>
+      <ul class="socials page-footer__socials">
+        <li class="socials__item page-footer__socials__item">
+          <a class="socials__link page-footer__socials__link" href="#">Facebook</a>
         </li>
-        <li>
-          <a href="#">Twitter</a>
+        <li class="socials__item page-footer__socials__item">
+          <a class="socials__link page-footer__socials__link" href="#">Twitter</a>
         </li>
-        <li>
-          <a href="#">Вконтакте</a>
+        <li class="socials__item page-footer__socials__item">
+          <a class="socials__link page-footer__socials__link" href="#">Вконтакте</a>
         </li>
       </ul>
-      <p>Новосибирск, Пушкинский проспект, 19</p>
-      <a href="tel:+73839006465" aria-label="Контактный телефон +7 (383) 900-64-65">+7 (383) 900-64-65</a>
+      <p class="page-footer__address">Новосибирск, Пушкинский проспект, 19</p>
+      <a class="page-footer__phone" href="tel:+73839006465" aria-label="Контактный телефон +7 (383) 900-64-65">+7 (383)
+        900-64-65</a>
     </div>
   </footer>
   <script src="js/main.js" type="module"></script>
