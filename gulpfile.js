@@ -118,6 +118,21 @@ const clean = () => {
   return del('build');
 }
 
+// Build
+exports.build = gulp.series(
+  clean,
+  sassCompileCss,
+  html,
+  scripts,
+  optimizeImages,
+  createWebp,
+  sprite,
+  gulp.parallel(
+    ttf2ToWoff,
+    ttf2ToWoff2
+  )
+)
+
 // Default
 exports.start = gulp.series(
   clean,

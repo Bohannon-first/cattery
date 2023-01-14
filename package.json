@@ -5,7 +5,8 @@
   "description": "Кошачий питомник",
   "license": "MIT",
   "scripts": {
-    "start": "gulp start"
+    "start": "gulp start",
+    "build": "gulp build"
   },
   "browserslist": [
     "last 4 versions",
