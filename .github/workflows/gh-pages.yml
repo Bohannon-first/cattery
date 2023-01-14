@@ -15,10 +15,16 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install and Build
-        run: |
-          npm install
-          npm run build
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+
+      - name: Installing Dependencies
+        run: npm install
+
+      - name: Building
+        run: npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
