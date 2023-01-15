@@ -12,25 +12,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
-
-      - name: Installing Dependencies
-        run: npm install
-
-      - name: Building
-        run: npm run build
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: ./build
-          branch: gh-pages
+
 
 
 
@@ -61,3 +53,40 @@ jobs:
 #             special-file.txt
 #             some/*.txt
 #           ssh-key: ${{ secrets.DEPLOY_KEY }}
+
+
+
+# Рабочие настройки
+# name: Deploy to GitHub-Pages
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v3
+#         with:
+#           persist-credentials: false
+
+#       - name: Setup Node
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: '16.x'
+
+#       - name: Installing Dependencies
+#         run: npm install
+
+#       - name: Building
+#         run: npm run build
+
+#       - name: Deploy
+#         uses: JamesIves/github-pages-deploy-action@v4
+#         with:
+#           folder: ./build
+#           branch: gh-pages
