@@ -1,0 +1,100 @@
+.care-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 42px;
+
+  // .care-list__item
+  &__item {
+    position: relative;
+    width: 558px;
+    min-height: 165px;
+    border: 0.5px solid $color-desc;
+    padding: 38px 78px 20px 59px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  // care-list__rules-item
+  &__rules-item {
+    margin-bottom: 15px;
+  }
+
+  // care-list__desc-item
+  &__desc-item {
+    margin-bottom: 15px;
+  }
+
+  // .care-list__title
+  &__title {
+    color: $color-desc;
+    font-weight: $roboto-bold;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 12px;
+  }
+
+  // .care-list__desc
+  // care-list__desc-show-more
+  &__desc,
+  &__desc-show-more {
+    font-size: $text-secondary-size;
+    line-height: $third-interlining;
+  }
+
+  // care-list__desc-show-more
+  &__desc-show-more {
+    position: absolute;
+    top: 164px;
+    left: 0;
+    border: 0.5px solid $color-desc;
+    padding: 38px 78px 20px 59px;
+    background-color: $color-bgc-header;
+    z-index: 100;
+    animation: showCareItem 0.5s ease 0s 1 normal forwards;
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $color-desc;
+    width: 60px;
+    height: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  &__svg {
+    transition: all 0.5s ease-out;
+  }
+}
+
+// Анимация появления аккордеона в блоке care
+@keyframes showCareItem {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Анимация закрытия аккордеона в блоке care
+@keyframes hiddenCareItem {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.remove-accordion {
+  animation: hiddenCareItem 0.5s ease 0s 1 normal forwards;
+}

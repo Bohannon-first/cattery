@@ -1,0 +1,65 @@
+.features-list {
+  position: absolute;
+
+  // .features-list__item
+  &__item {
+    position: relative;
+    font-size: $text-secondary-size;
+    line-height: $third-interlining;
+    width: 213px;
+  }
+
+  &__item::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -50px;
+    width: 15px;
+    height: 15px;
+    background-color: $color-desc;
+    border-radius: 50%;
+  }
+
+  &__item:nth-child(1) {
+    top: 324px;
+    left: -444px;
+  }
+
+  &__item:nth-child(2) {
+    top: 591px;
+    left: -470px;
+    // width: 212px;
+  }
+
+  &__item:nth-child(3) {
+    top: 369px;
+    left: 468px;
+
+    // Убрать первоначальный псевдоэлемент справа
+    &::before {
+      display: none;
+    }
+  }
+
+  &__item:nth-child(4) {
+    top: 539px;
+    left: 427px;
+
+    // Убрать первоначальный псевдоэлемент справа
+    &::before {
+      display: none;
+    }
+  }
+
+  // Новый псевдоэлемент, где буллит слева
+  &__item--left-bullet::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -50px;
+    width: 15px;
+    height: 15px;
+    background-color: $color-desc;
+    border-radius: 50%;
+  }
+}

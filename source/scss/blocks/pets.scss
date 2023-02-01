@@ -1,0 +1,56 @@
+.pets {
+  background-color: $color-main-bgc;
+  padding-top: 223px;
+  padding-bottom: 83px;
+
+  // pets__container
+  &__container {
+    text-align: center;
+  }
+
+  // pets__secondary-title
+  &__secondary-title {
+    margin-bottom: 23px;
+  }
+
+  // pets__section-description
+  &__section-description {
+    margin-bottom: 38px;
+  }
+
+  // pets__main-button
+  &__main-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 55px;
+  }
+
+  // pets__slider-btn-prev
+  // pets__slider-btn-next
+  &__slider-btn-prev,
+  &__slider-btn-next {
+    display: none;
+  }
+
+  // pets__indicators
+  &__indicators {
+    position: static;
+    margin-bottom: 46px;
+
+    [data-bs-target] {
+      box-sizing: border-box;
+      color: $main-white;
+      width: 75px;
+      text-indent: 0;
+    }
+  }
+
+  // Стилизация слайдов в слайдере в блоке pets
+  .carousel-item-next,
+  .carousel-item-prev,
+  .gallery-images.active {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 30px;
+  }
+}

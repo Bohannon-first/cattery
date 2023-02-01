@@ -1,0 +1,141 @@
+.main-slider {
+
+  // .main-slider__wrapper
+  &__wrapper {
+    max-width: 973px;
+    margin: 0 auto;
+  }
+
+  &__item.active {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  // .main-slider__img-container
+  &__img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 356px;
+    overflow: hidden;
+  }
+
+  // .main-slider__content
+  &__content {
+    background-color: $color-secondary-bgc;
+    border: 0.5px solid $button-slider;
+    width: 660px;
+    padding: 23px 34px 23px 26px;
+    margin-left: auto;
+  }
+
+  // main-slider__content-wrapper
+  &__content-wrapper {
+    background-color: $color-main-bgc;
+    padding: 69px 98px 59px 98px;
+  }
+
+  // .main-slider__name-employee
+  &__name-employee {
+    font-weight: $roboto-medium;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-desc;
+    margin-bottom: 10px;
+  }
+
+  // .main-slider__employee-position
+  &__employee-position {
+    font-weight: $roboto-regular;
+    line-height: $third-interlining;
+    color: $color-desc;
+    margin-bottom: 20px;
+  }
+
+  // .main-slider__employee-quote
+  &__employee-quote {
+    margin-bottom: 43px;
+  }
+
+  // main-slider__socials
+  &__socials {
+    position: initial;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  // main-slider__socials__item
+  &__socials__item:not(:first-child) {
+    margin-right: 10px;
+  }
+
+  // main-slider__btn-prev
+  &__btn-prev {
+    left: -60px;
+  }
+
+  // main-slider__btn-next
+  &__btn-next {
+    right: -60px;
+  }
+
+  &__btn-icon-prev {
+    background-image: url('../img/icons/icon-btn-prev.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  &__btn-icon-next {
+    background-image: url('../img/icons/icon-btn-next.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  // Блок reviews
+  // main-slider__wrapper--reviews-section
+  &__wrapper--reviews-section {
+    min-width: 1021px;
+  }
+
+  // main-slider__content-wrapper--reviews-section
+  &__content-wrapper--reviews-section {
+    background-color: transparent;
+  }
+
+  // main-slider__content--reviews-section
+  &__content--reviews-section {
+    border: none;
+    width: 640px;
+  }
+
+  // main-slider__name-employee--reviews-section
+  &__name-employee--reviews-section {
+    color: $main-white;
+  }
+
+  // main-slider__employee-quote--reviews-section
+  &__employee-quote--reviews-section {
+    font-size: $text-secondary-size;
+    line-height: $third-interlining;
+    color: $color-text-reviews;
+  }
+
+  // main-slider__btn-prev--reviews-section
+  &__btn-prev--reviews-section {
+    left: -90px;
+  }
+
+  // main-slider__btn-next--reviews-section
+  &__btn-next--reviews-section {
+    right: -90px;
+  }
+}

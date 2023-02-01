@@ -1,0 +1,140 @@
+.faq {
+  background-color: $color-main-bgc;
+  padding: 73px 0;
+
+  // faq__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // faq__secondary-title
+  &__secondary-title {
+    margin-bottom: 23px;
+  }
+
+  // faq__section-description
+  &__section-description {
+    margin-bottom: 53px;
+  }
+
+  // faq__list
+  &__list {
+    width: 793px;
+    margin: 0;
+    padding: 0;
+  }
+
+  // faq__list-item
+  &__list-item {
+    position: relative;
+    border: 0.5px solid $button-slider;
+    padding: 15px 42px;
+    margin-bottom: 37px;
+    min-height: 110px;
+    cursor: pointer;
+    user-select: none;
+
+    transition: all 0.5s ease-out;
+  }
+
+  // faq__question
+  &__question {
+    transform: translate(0, -50%);
+  }
+
+  &__list-item::marker {
+    font-weight: $roboto-bold;
+    font-size: 70px;
+    line-height: 82px;
+    color: $color-desc;
+    margin-right: 32px;
+    content: "0" counter(list-item) " ";
+  }
+
+  // faq__list-rules-item
+  &__list-rules-item {
+    margin-bottom: 15px;
+  }
+
+  // faq__list-rules-item-reserve
+  &__list-rules-item-reserve {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  // faq__button
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 104px;
+    min-height: inherit;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  // faq__button-vertical-line
+  // faq__button-horizontal-line
+  &__button-vertical-line,
+  &__button-horizontal-line {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    width: 18px;
+    height: 2px;
+    background-color: $color-desc;
+
+    transition: all 0.5s ease-out;
+  }
+
+  &__button-vertical-line {
+    transform: rotate(90deg);
+  }
+
+  // faq__answer-container
+  &__answer-container {
+    border-top: 0.5px solid $button-slider;
+    padding-top: 20px;
+    animation: showFaqAnswer 0.5s ease 0s 1 normal forwards;
+  }
+
+  // faq__answer
+  &__answer {
+    margin-bottom: 15px;
+  }
+}
+
+
+// Анимация открытия аккордеона в блоке faq
+@keyframes showFaqAnswer {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Анимация закрытия аккордеона в блоке faq
+@keyframes hiddenFaqAnswer {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.remove-faq-answer {
+  animation: hiddenFaqAnswer 0.5s ease 0s 1 normal forwards;
+}

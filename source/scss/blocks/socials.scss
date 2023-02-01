@@ -1,0 +1,16 @@
+.socials {
+  position: relative;
+  top: 38px;
+  left: -100px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -62px;
+    left: -30px;
+    width: 77px;
+    height: 0.5px;
+    background-color: $color-socials-pseudo;
+    transform: rotate(90deg);
+  }
+}
