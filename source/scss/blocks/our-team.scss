@@ -1,0 +1,18 @@
+.our-team {
+  background-color: $color-secondary-bgc;
+  padding: 83px 50px 72px 50px;
+
+  &__container {
+    min-width: 1188px;
+  }
+
+  &__secondary-title {
+    margin-bottom: 23px;
+    text-align: center;
+  }
+
+  &__section-description {
+    margin-bottom: 22px;
+    text-align: center;
+  }
+}

@@ -6,37 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кошачий питомник</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <div class="container">
+    <div class="container page-header__container">
       <a class="logo">
-        <svg class='logo__svg' width='' height=''>
-          <use xlink:href='img/sprite.svg#'></use>
+        <svg class='logo__svg' width='57' height='26'>
+          <use xlink:href='img/sprite.svg#icon-logo'></use>
         </svg>
       </a>
       <div class="page-header__content">
-        <p class="section-description">Новосибирск</p>
-        <h1 class="main-title">Питомник Мейн-Кунов</h1>
+        <p class="section-description page-header__section-description-city">Новосибирск</p>
+        <h1 class="main-title page-header__main-title">Питомник Мейн-Кунов</h1>
         <p class="section-description">Первый питомник с расширенным спектром услуг</p>
-        <a class="main-button" href="#">Смотреть котиков</a>
+        <a class="main-button page-header__main-button" href="#">Смотреть котиков</a>
       </div>
       <ul class="socials">
         <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span>Вконтакте</span>
+          <a class="socials__link" href="https://vk.com/">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class='socials__svg-vk' width='13' height='8'>
+              <use xlink:href='img/sprite.svg#icon-vk'></use>
+            </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span>Twitter</span>
+          <a class="socials__link" href="https://twitter.com/">
+            <span class="visually-hidden">Twitter</span>
+            <svg class='socials__svg-twitter' width='16' height='11'>
+              <use xlink:href='img/sprite.svg#icon-twitter'></use>
+            </svg>
           </a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span>Facebook</span>
+          <a class="socials__link" href="https://facebook.com/">
+            <span class="visually-hidden">Facebook</span>
+            <svg class='socials__svg-facebook' width='6' height='12'>
+              <use xlink:href='img/sprite.svg#icon-facebook'></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -45,148 +55,682 @@
 
   <main class="page-main">
     <section class="pets">
-      <div class="container">
-        <h2 class="secondary-title">Питомцы</h2>
-        <p class="section-description">Все представители нашего питомника имеют ветеринарный паспорт
+      <div class="container pets__container">
+        <h2 class="secondary-title pets__secondary-title">Питомцы</h2>
+        <p class="section-description pets__section-description">Все представители нашего питомника имеют ветеринарный
+          паспорт <br>
           с отметками о прививках и документ с родословной</p>
-        <div class="gallery">
-          <ul class="gallery-list">
-            <li class="gallery-list__item">Коты</li>
-            <li class="gallery-list__item">Кошки</li>
-            <li class="gallery-list__item">Котята</li>
-          </ul>
-          <div class="gallery-images">
-            <img class="gallery-images__item" src="" alt="">
-            <img class="gallery-images__item" src="" alt="">
-            <img class="gallery-images__item" src="" alt="">
-          </div>
+        <!-- Слайдер с котами -->
+        <div class="carousel-indicators pets__indicators">
+          <button type="button" data-bs-target="#carouselPets" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1">Коты</button>
+          <button type="button" data-bs-target="#carouselPets" data-bs-slide-to="1" aria-label="Slide 2">Кошки</button>
+          <button type="button" data-bs-target="#carouselPets" data-bs-slide-to="2" aria-label="Slide 3">Котята</button>
         </div>
-        <a class="main-button" href="#">Смотреть больше</a>
+        <div id="carouselPets" class="carousel slide pets__slider">
+          <div class="carousel-inner">
+            <div class="carousel-item gallery-images active">
+              <div class="gallery-images__photo1">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/cat-male-white.png"
+                  alt="Белый кот">
+              </div>
+              <div class="gallery-images__photo2">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/cat-male-grey.png"
+                  alt="Серый кот">
+              </div>
+              <div class="gallery-images__photo3">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/cat-male-dark.png"
+                  alt="Тёмный кот">
+              </div>
+            </div>
+            <div class="carousel-item gallery-images">
+              <div class="gallery-images__photo1">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/kitty1.jpg"
+                  alt="Чёрно-белая крадущаяся кошка">
+              </div>
+              <div class="gallery-images__photo2">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/kitty3.jpg"
+                  alt="Рыжая короткошёрстная кошка">
+              </div>
+              <div class="gallery-images__photo3">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/kitty2.jpg"
+                  alt="Пушистая рыжая кошка">
+              </div>
+            </div>
+            <div class="carousel-item gallery-images">
+              <div class="gallery-images__photo1">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/kitten-baby1.jpg"
+                  alt="Белый котёнок">
+              </div>
+              <div class="gallery-images__photo2">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/kitten-baby2.jpg" alt="Котята">
+              </div>
+              <div class="gallery-images__photo3">
+                <img class="d-block w-100 gallery-images__item" src="img/content/desktop/kitten-baby3.jpg"
+                  alt="Милый котёнок">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev pets__slider-btn-prev" type="button" data-bs-target="#carouselPets"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next pets__slider-btn-next" type="button" data-bs-target="#carouselPets"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Слайдер с котами -->
+        <a class="main-button pets__main-button" href="#">Смотреть больше</a>
       </div>
     </section>
 
     <section class="features">
-      <div class="container">
-        <h2 class="secondary-title">Особенности породы</h2>
-        <p class="section-description">Мейн-Кун - это порода, которая вызывает к себе уважение. Приобретая в свой дом
+      <div class="container features__container">
+        <h2 class="secondary-title features__secondary-title">Особенности породы</h2>
+        <p class="section-description features__section-description">Мейн-Кун - это порода, которая вызывает к себе
+          уважение. Приобретая в свой дом
           этого питомца,
           вы получите умное животное, которому нет равных </p>
         <ul class="features-list">
           <li class="features-list__item">Легко уживается в семьях с детьми или другими животными</li>
           <li class="features-list__item">Внешний вид этой кошки похож на дикую рысь</li>
-          <li class="features-list__item">Выполняет команды как дрессированная собака</li>
-          <li class="features-list__item">Вес может достигать 12 кг, а длина 1 м</li>
+          <li class="features-list__item features-list__item--left-bullet">Выполняет команды как дрессированная собака
+          </li>
+          <li class="features-list__item features-list__item--left-bullet">Вес может достигать 12 кг, а длина 1 м</li>
         </ul>
       </div>
     </section>
 
     <section class="advantages">
-      <div class="container">
-        <h2 class="secondary-title">Почему именно мы?</h2>
-        <p class="section-description">Приобретая животное в нашем питомнике, вы получите</p>
+      <div class="container advantages__container">
+        <h2 class="secondary-title advantages__secondary-title">Почему именно мы?</h2>
+        <p class="section-description advantages__section-description">Приобретая животное в нашем питомнике, вы
+          получите</p>
         <ul class="advantages-list">
           <li class="advantages-list__item">
             <a class="advantages-list__link" href="#">
-              <svg class='advantages-list__svg' width='' height=''>
-                <use xlink:href='img/sprite.svg#'></use>
+              <svg class='advantages-list__svg' width='99' height='107'>
+                <use xlink:href='img/sprite.svg#icon-services'></use>
               </svg>
-              Бесплатное ветеринарное обслуживание 5 лет</a>
+              Бесплатное ветеринарное<br> обслуживание 5 лет</a>
           </li>
           <li class="advantages-list__item">
             <a class="advantages-list__link" href="#">
-              <svg class='advantages-list__svg' width='' height=''>
-                <use xlink:href='img/sprite.svg#'></use>
+              <svg class='advantages-list__svg' width='107' height='97'>
+                <use xlink:href='img/sprite.svg#icon-consulting'></use>
               </svg>
-              Консультирование по любому вопросу 24 часа в сутки</a>
+              Консультирование по любому<br> вопросу 24 часа в сутки</a>
           </li>
           <li class="advantages-list__item">
             <a class="advantages-list__link" href="#">
-              <svg class='advantages-list__svg' width='' height=''>
-                <use xlink:href='img/sprite.svg#'></use>
+              <svg class='advantages-list__svg' width='71' height='108'>
+                <use xlink:href='img/sprite.svg#icon-food'></use>
               </svg>
-              Индивидуальный подбор питания для вашего кота</a>
+              Индивидуальный подбор<br> питания для вашего кота</a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="care">
-      <div class="container">
-        <h2 class="secondary-title">Об уходе за Мейн-Куном</h2>
+      <div class="container care__container">
+        <h2 class="secondary-title care__secondary-title">Об уходе за Мейн-Куном</h2>
         <ul class="care-list">
           <li class="care-list__item">
             <h3 class="care-list__title">Шерсть</h3>
             <p class="care-list__desc">Мы разработали 8 правил, следуя которым, шерсть вашего кота всегда будет
               блестящей, мягкой и послушной
             </p>
+            <div class="care-list__desc-show-more hidden" data-desc="rules">
+              <ol class="care-list__rules-list">
+                <li class="care-list__rules-item">Регулярное расчёсывание не реже 1 раза в неделю.</li>
+                <li class="care-list__rules-item">Во время линьки вычёсывать необходимо чаще чем обычно. Если кошка
+                  очень
+                  пушистая, то необходимо искупать ее.</li>
+                <li class="care-list__rules-item">Регулярно осматривать кошку и при обнужении колтунов распутывать их.
+                </li>
+                <li class="care-list__rules-item">Регулярно купать кошку. Мы рекомендуем купать 1 раз в 21 день -
+                  столько длится цикл обновления клеток кожи.</li>
+                <li class="care-list__rules-item">Выбирать подходящие средства для ухода за шерстью. В базовый набор
+                  входят: шампунь, кондиционер, средство для расчёсывания.</li>
+                <li class="care-list__rules-item">СПА процедуры для кошек помогают решить проблемы с кожей и шерстью,
+                  поддержать их здоровье и красоту. В нее входят шампуни и маски для шерсти на основе фруктовых
+                  эссенций.</li>
+                <li class="care-list__rules-item">Регулярный осмотр у ветеринара.</li>
+                <li class="care-list__rules-item">Сбалансированное питание.</li>
+              </ol>
+            </div>
+            <button class="care-list__button" type="button" aria-label="Показать подробнее" data-desc="rules">
+              <svg class='care-list__svg' width='12' height='17'>
+                <use xlink:href='img/sprite.svg#icon-right'></use>
+              </svg>
+            </button>
           </li>
           <li class="care-list__item">
             <h3 class="care-list__title">Когти</h3>
             <p class="care-list__desc">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать
               идеальную когтеточку</p>
+            <div class="care-list__desc-show-more hidden" data-desc="claw">
+              <p class="care-list__desc-item">Стрижка когтей кошкам становится практически неизбежной гигиенической
+                процедурой для большинства владельцев домашних питомцев. Частота стрижки зависит от скорости роста
+                когтей животного. Как понять, что пора стричь когти кошки? Обращайте внимание на вашего питомца.
+                Усилившееся желание точить когти о мебель, может свидетельствовать, что пришла пора стричь когти. В
+                среднем «маникюр» необходимо будет делать примерно 1 раз в месяц.</p>
+              <p class="care-list__desc-item">
+                Когтеточка – такой же необходимый аксессуар для домашних котов, как миска, лежанка и туалет с
+                наполнителем. Заводя кота, необходимо включить в список самых необходимых покупок это «устройство для
+                кошачьего маникюра».
+                Итак, 5 золотых правил при выборе когтеточки:
+              </p>
+              <ol class="care-list__rules-list">
+                <li class="care-list__rules-item">Безопасность. Отсутствие острых углов, о которые кошка может
+                  пораниться. Комплексы и столбики
+                  должны быть устойчивыми. Напольные коврики надо брать с прорезиненным основанием.</li>
+                <li class="care-list__rules-item">Размер и форма. Нужно определить в каком месте квартиры будет стоять
+                  когтеточка. Удобно ли коту
+                  подходить к ней? Впишется ли она в общий интерьер помещения?</li>
+                <li class="care-list__rules-item">Материал. Для основания лучше натуральное дерево или ДСП, а для
+                  обмотки натуральный материал:
+                  толстый канат, картон или ковролин.</li>
+                <li class="care-list__rules-item">Уход и обслуживание. Конструкция должна легко чиститься и мыться.
+                  Хорошо, если элементы точилки
+                  можно будет снимать и со временем перетягивать, реставрировать.</li>
+                <li class="care-list__rules-item">Цена. У каждого вида есть дорогие и дешевые модели. Выбрать есть из
+                  чего. Отечественные модели стоят
+                  дешевле разрекламированных импортных брендов, а по качеству ничем им не уступают.</li>
+              </ol>
+            </div>
+            <button class="care-list__button" type="button" aria-label="Показать подробнее" data-desc="claw">
+              <svg class='care-list__svg' width='12' height='17'>
+                <use xlink:href='img/sprite.svg#icon-right'></use>
+              </svg>
+            </button>
           </li>
           <li class="care-list__item">
             <h3 class="care-list__title">Уши и глаза</h3>
             <p class="care-list__desc">Владельцам котов необходимо регулярно осматривать
-              ушки и глазасвоих питомцев, ведь это может быть
+              ушки и глаза своих питомцев, ведь это может быть
               признаками заболевания</p>
+            <div class="care-list__desc-show-more hidden" data-desc="ears">
+              <p class="care-list__desc-item">Гигиена питомца дело очень ответственное. Уход за ушами и глазами не
+                занимает много времени. Главное,
+                проводить процедуры регулярно.
+                Глаза кошки следует регулярно очищать, не допуская скопления грязи. Для этой цели можно использовать
+                обычные ватные тампоны, смоченные кипяченой водой или 2% раствором борного спирта.
+                Легким движением протрите участки вокруг глаз в направлении от внутреннего уголка к наружному.</p>
+              <p class="care-list__desc-item">Для того чтобы почистить ушки животного, необходимо как следует
+                зафиксировать голову питомца, очень
+                аккуратно вывернуть ухо наизнанку и протереть его ватой, намотанной на палочку. Для очистки можно
+                использовать раствор перекиси водорода или вазелин.
+                Важно! Не пытайтесь проникнуть глубоко в ухо, это чревато травмированием барабанной перепонки.
+                Если вы заметили обильные выделения из уха животного, отек или покраснение – незамедлительно обратитесь
+                к
+                ветеринару.
+              </p>
+            </div>
+            <button class="care-list__button" type="button" aria-label="Показать подробнее" data-desc="ears">
+              <svg class='care-list__svg' width='12' height='17'>
+                <use xlink:href='img/sprite.svg#icon-right'></use>
+              </svg>
+            </button>
           </li>
           <li class="care-list__item">
             <h3 class="care-list__title">Питание</h3>
             <p class="care-list__desc">В нашем питомнике существует два подхода: натуральное питание и питание
               промышленными кормами, но
               выбирать только вам</p>
+            <div class="care-list__desc-show-more hidden" data-desc="food">
+              <p class="care-list__desc-item">Чтобы натуральный рацион принес максимум пользы, необходимо соблюдать
+                следующие несложные рекомендации:</p>
+              <ol class="care-list__rules-list">
+                <li class="care-list__rules-item">Кормить в зависимости от потребностей следует 1-2 раза в одно и то же
+                  время.</li>
+                <li class="care-list__rules-item">Остатки корма через 30 минут обязательно убирают.</li>
+                <li class="care-list__rules-item">У кошки постоянно должна быть чистая питьевая вода.</li>
+                <li class="care-list__rules-item">Для кормления кошек не рекомендуется использовать коровье молоко.
+                  Содержащаяся в нем лактоза, плохо усваивается взрослыми животными.</li>
+                <li class="care-list__rules-item"> Рыбу и мясные продукты необходимо предварительно отваривать или
+                  промораживать, это предотвратит заражение гельминтами и другими паразитами.</li>
+                <li class="care-list__rules-item">В рацион обязательно включают овощи в сыром или пассированном виде.
+                  Содержащаяся в них клетчатка способствует пищеварению.</li>
+              </ol>
+              <p class="care-list__desc-item">Если решили кормить кота готовым кормом, старайтесь не давать ему еще и
+                домашнюю еду: магазинные корма предназначены для полнорационного питания. Если питомца дополнительно
+                подкармливать со стола, это приведет к перееданию и ожирению любимца.</p>
+            </div>
+            <button class="care-list__button" type="button" aria-label="Показать подробнее" data-desc="food">
+              <svg class='care-list__svg' width='12' height='17'>
+                <use xlink:href='img/sprite.svg#icon-right'></use>
+              </svg>
+            </button>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="our-team">
-      <div class="container">
-        <h2 class="secondary-title">Наша команда</h2>
-        <p class="section-description">Все сотрудники нашего питомника дипломированые специалисты
+      <div class="container our-team__container">
+        <h2 class="secondary-title our-team__secondary-title">Наша команда</h2>
+        <p class="section-description our-team__section-description">Все сотрудники нашего питомника дипломированые
+          специалисты<br>
           в области фелинологии и ветеринарии</p>
+        <!-- Слайдер "наша команда" -->
+        <div id="carouselOurTeam" class="carousel slide main-slider">
+          <div class="carousel-inner main-slider__wrapper">
+            <div class="carousel-item active main-slider__item">
+              <div class="main-slider__img-container">
+                <img class="main-slider__img" src="img/content/desktop/popov.png" alt="Серёжа Попов" width="360"
+                  height="356">
+              </div>
+              <div class="main-slider__content">
+                <div class="main-slider__content-wrapper">
+                  <p class="main-slider__name-employee">Серёжа Попов</p>
+                  <p class="main-slider__employee-position">Основатель питомника</p>
+                  <blockquote class="main-slider__employee-quote">Наш питомник занимается разведением Мейн-Кунов
+                    на протяжении 15 лет. Мы в ответе за каждого
+                    приобретенного вами питомца.</blockquote>
+                  <ul class="socials main-slider__socials">
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link main-slider__socials__link" href="https://vk.com/">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <svg class='socials__svg-vk main-slider__socials__svg-vk' width='13' height='8'>
+                          <use xlink:href='img/sprite.svg#icon-vk'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link main-slider__socials__link" href="https://twitter.com/">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg class='socials__svg-twitter main-slider__socials__svg-twitter' width='16' height='11'>
+                          <use xlink:href='img/sprite.svg#icon-twitter'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link ain-slider__socials__link" href="https://facebook.com/">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg class='socials__svg-facebook main-slider__socials__svg-facebook' width='6' height='12'>
+                          <use xlink:href='img/sprite.svg#icon-facebook'></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item main-slider__item">
+              <div class="main-slider__img-container">
+                <img class="main-slider__img" src="img/content/desktop/ogurcova.jpg" alt="Наташа Огурцова" width="360"
+                  height="356">
+              </div>
+              <div class="main-slider__content">
+                <div class="main-slider__content-wrapper">
+                  <p class="main-slider__name-employee">Наташа Огурцова</p>
+                  <p class="main-slider__employee-position">Коммерческий директор</p>
+                  <blockquote class="main-slider__employee-quote">Мы обожаем всех кошек, но Мейн-Куны это цари среди
+                    них.
+                    Вместе мы сделаем наш питомник лучшим в городе.</blockquote>
+                  <ul class="socials main-slider__socials">
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link main-slider__socials__link" href="https://vk.com/">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <svg class='socials__svg-vk main-slider__socials__svg-vk' width='13' height='8'>
+                          <use xlink:href='img/sprite.svg#icon-vk'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link main-slider__socials__link" href="https://twitter.com/">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg class='socials__svg-twitter main-slider__socials__svg-twitter' width='16' height='11'>
+                          <use xlink:href='img/sprite.svg#icon-twitter'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link ain-slider__socials__link" href="https://facebook.com/">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg class='socials__svg-facebook main-slider__socials__svg-facebook' width='6' height='12'>
+                          <use xlink:href='img/sprite.svg#icon-facebook'></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item main-slider__item">
+              <div class="main-slider__img-container">
+                <img class="main-slider__img" src="img/content/desktop/alexeev.jpg" alt="Тимофей Алексеев" width="360"
+                  height="240">
+              </div>
+              <div class="main-slider__content">
+                <div class="main-slider__content-wrapper">
+                  <p class="main-slider__name-employee">Тимофей Алексеев</p>
+                  <p class="main-slider__employee-position">Главный ветеринар</p>
+                  <blockquote class="main-slider__employee-quote">Мейн-Куны в нашем питомнике обеспечиваются лучшим
+                    медицинским обслуживанием и питанием. Не верите? Приходите к нам и сами все увидите.
+                  </blockquote>
+                  <ul class="socials main-slider__socials">
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link main-slider__socials__link" href="https://vk.com/">
+                        <span class="visually-hidden">Вконтакте</span>
+                        <svg class='socials__svg-vk main-slider__socials__svg-vk' width='13' height='8'>
+                          <use xlink:href='img/sprite.svg#icon-vk'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link main-slider__socials__link" href="https://twitter.com/">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg class='socials__svg-twitter main-slider__socials__svg-twitter' width='16' height='11'>
+                          <use xlink:href='img/sprite.svg#icon-twitter'></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item main-slider__socials__item">
+                      <a class="socials__link ain-slider__socials__link" href="https://facebook.com/">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg class='socials__svg-facebook main-slider__socials__svg-facebook' width='6' height='12'>
+                          <use xlink:href='img/sprite.svg#icon-facebook'></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev main-slider__btn-prev" type="button" data-bs-target="#carouselOurTeam"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon main-slider__btn-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next main-slider__btn-next" type="button" data-bs-target="#carouselOurTeam"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon main-slider__btn-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Слайдер "наша команда" -->
       </div>
     </section>
 
     <section class="faq">
-      <div class="container">
-        <h2 class="secondary-title">Вопрос-Ответ</h2>
-        <p class="section-description">Мы ответим на самые популярные ваши вопросы</p>
+      <div class="container faq__container">
+        <h2 class="secondary-title faq__secondary-title">Вопрос-Ответ</h2>
+        <p class="section-description faq__section-description">Мы ответим на самые популярные ваши вопросы</p>
+        <ol class="faq__list">
+          <li class="faq__list-item">
+            <p class="faq__question">С какого возраста можно забирать котенка из питомника?</p>
+            <div class="faq__answer-container hidden" data-faq="age-cat">
+              <p class="faq__answer">Есть важная причина, почему котенка стоит забирать домой только после трех месяцев,
+                —
+                это вакцинация. Первые прививки животному делают в возрасте 8 недель. Ревакцинация проводится через 3–4
+                недели. То есть котенок, покидающий дом позднее 12 недель, максимально защищен от различных вирусов и
+                инфекций.
+              </p>
+              <p class="faq__answer">
+                Так что, чтобы в домe появился психически и физически здоровый котенок, игривый, жизнерадостный,
+                самостоятельный и воспитанный, не спешите забирать его от кошки-мамы раньше трех месяцев.
+              </p>
+            </div>
+            <button class="faq__button" data-faq="age-cat" aria-label="Показать подробнее">
+              <span class="faq__button-vertical-line"></span>
+              <span class="faq__button-horizontal-line"></span>
+            </button>
+          </li>
+          <li class="faq__list-item">
+            <p class="faq__question">Как зарезервировать котенка?</p>
+            <div class="faq__answer-container hidden" data-faq="reserve">
+              <ol class="faq__list-rules-list">
+                <li class="faq__list-rules-item">Заключить с нами договор. В договоре прописаны все условия и сумма
+                  залога, он подписывается заводчиком скрепляется печатью питомника. Копия договора высылается
+                  покупателю на электронную почту, Viber или куда удобнее, оригинал передается уже вместе с котенком.
+                </li>
+                <li class="faq__list-rules-item">Внести денежный залог в размере 30-50% от стоимости котенка.</li>
+                <li class="faq__list-rules-item">После внесения залога, на сайте питомника ставится статус
+                  <span class="faq__list-rules-item-reserve">зарезервирован</span> и котенок снимается с продажи, растет
+                  и ждет переезда в новый дом.
+                </li>
+              </ol>
+            </div>
+            <button class="faq__button" data-faq="reserve" aria-label="Показать подробнее">
+              <span class="faq__button-vertical-line"></span>
+              <span class="faq__button-horizontal-line"></span>
+            </button>
+          </li>
+          <li class="faq__list-item">
+            <p class="faq__question">Можно ли купить кота, если я живу в другом городе?</p>
+            <div class="faq__answer-container hidden" data-faq="buy-cat">
+              <p class="faq__answer">Мы всегда просим, чтобы покупатель сам приехал за своим котенком. В этом случае вы
+                сможете увидеть, как живут наши кошки и котята Мейн-Кун, оценить их внешний вид и условия содержания
+                наших мейнкунов в питомнике. Если это невозможно по каким-то причинам, мы можем осуществить доставку до
+                городов: Москва, Санкт-Петербург, Рязань, Воронеж, Краснодар за стоимость бензина.
+              </p>
+              <p class="faq__answer">
+                Доставка в другие города оговаривается отдельно. Это может быть как доставка Карго без сопровождения,
+                так и доставка курьером. В этом случае все транспортные расходы и стоимость приобретения специальной
+                транспортной переноски и оформления сопроводительных документов несет покупатель.
+              </p>
+            </div>
+            <button class="faq__button" data-faq="buy-cat" aria-label="Показать подробнее">
+              <span class="faq__button-vertical-line"></span>
+              <span class="faq__button-horizontal-line"></span>
+            </button>
+          </li>
+          <li class="faq__list-item">
+            <p class="faq__question">Как подготовить дом к приему нового питомца?</p>
+            <div class="faq__answer-container hidden" data-faq="new-cat">
+              <ol class="faq__list-rules-list">
+                <li class="faq__list-rules-item">Поставьте ограничители на двери, закрывайте шкафы, проверяйте
+                  стиральную машину перед загрузкой белья.</li>
+                <li class="faq__list-rules-item">Спрячьте электрические кабели в короб и не оставляйте зарядные
+                  устройства без присмотра.</li>
+                <li class="faq__list-rules-item">Держите окна и дверь на балкон закрытыми, чтобы котенок не выпал.</li>
+                <li class="faq__list-rules-item">Нужно постоянно следить за питомцем, когда в доме работает обогреватель
+                  и плита.</li>
+                <li class="faq__list-rules-item">Уберите повыше бытовую химию и мелкие предметы, которые котенок может
+                  проглотить.</li>
+                <li class="faq__list-rules-item">Уберите из дома ядовитые растения.</li>
+                <li class="faq__list-rules-item">Подготовьте для котенка спальное место в домике или коробке.</li>
+                <li class="faq__list-rules-item">Приобретите три миски и лоток.</li>
+                <li class="faq__list-rules-item">Котенку также понадобятся игрушки, когтеточка, шампунь, щетка, ножницы
+                  для стрижки когтей и переноска.</li>
+              </ol>
+            </div>
+            <button class="faq__button" data-faq="new-cat" aria-label="Показать подробнее">
+              <span class="faq__button-vertical-line"></span>
+              <span class="faq__button-horizontal-line"></span>
+            </button>
+          </li>
+        </ol>
       </div>
     </section>
 
     <section class="reviews">
       <div class="container">
-        <h2 class="secondary-title">Отзывы</h2>
+        <h2 class="secondary-title reviews__secondary-title">Отзывы</h2>
+        <!-- Слайдер "отзывы" -->
+        <div id="carouselReviews" class="carousel slide main-slider">
+          <div class="carousel-inner main-slider__wrapper main-slider__wrapper--reviews-section">
+            <div class="carousel-item active main-slider__item">
+              <div class="main-slider__img-container reviews__img-container">
+                <img class="main-slider__img" src="img/content/desktop/popov-reviews.png" alt="Серёжа Попов" width="481"
+                  height="331">
+              </div>
+              <div class="main-slider__content main-slider__content--reviews-section">
+                <div class="main-slider__content-wrapper main-slider__content-wrapper--reviews-section">
+                  <p class="main-slider__name-employee main-slider__name-employee--reviews-section">Серёжа Попов</p>
+                  <blockquote class="main-slider__employee-quote main-slider__employee-quote--reviews-section">Своего
+                    кота Бакса я взял из нашего питомника. Теперь он полноценный член моей семьи, чему очень рад. Наш
+                    питомник помог многим любителям животных найти себе питомцев, приходите и вы!
+                  </blockquote>
+                  <div class="reviews__date-socials-container">
+                    <time class="reviews__date" datetime="2018-05-24">24 мая 2018</time>
+                    <ul class="socials main-slider__socials reviews__socials">
+                      <li class="socials__item main-slider__socials__item reviews__socials__item">
+                        <a class="socials__link main-slider__socials__link reviews__socials-link"
+                          href="https://vk.com/">
+                          <span class="visually-hidden">Вконтакте</span>
+                          <svg class='socials__svg-vk main-slider__socials__svg-vk' width='13' height='8'>
+                            <use xlink:href='img/sprite.svg#icon-vk-reviews'></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item main-slider__socials__item reviews__socials__item">
+                        <a class="socials__link main-slider__socials__link reviews__socials-link"
+                          href="https://twitter.com/">
+                          <span class="visually-hidden">Twitter</span>
+                          <svg class='socials__svg-twitter main-slider__socials__svg-twitter' width='14' height='10'>
+                            <use xlink:href='img/sprite.svg#icon-twitter-reviews'></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item main-slider__item">
+              <div class="main-slider__img-container reviews__img-container">
+                <img class="main-slider__img" src="img/content/desktop/lazareva-reviews.png" alt="Василиса Лазарева"
+                  width="481" height="331">
+              </div>
+              <div class="main-slider__content main-slider__content--reviews-section">
+                <div class="main-slider__content-wrapper main-slider__content-wrapper--reviews-section">
+                  <p class="main-slider__name-employee main-slider__name-employee--reviews-section">Василиса Лазарева
+                  </p>
+                  <blockquote class="main-slider__employee-quote main-slider__employee-quote--reviews-section">Я выражаю
+                    огромную благодарность
+                    вашему питомнику. Мой Феликс невероятно
+                    умен и воспитан. Огромным плюсом питомника
+                    является возможность консультироваться в любое время</blockquote>
+                  <div class="reviews__date-socials-container">
+                    <time class="reviews__date" datetime="2019-09-05">05 сентября 2019</time>
+                    <ul class="socials main-slider__socials reviews__socials">
+                      <li class="socials__item main-slider__socials__item reviews__socials__item">
+                        <a class="socials__link main-slider__socials__link reviews__socials-link"
+                          href="https://vk.com/">
+                          <span class="visually-hidden">Вконтакте</span>
+                          <svg class='socials__svg-vk main-slider__socials__svg-vk' width='13' height='8'>
+                            <use xlink:href='img/sprite.svg#icon-vk-reviews'></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item main-slider__socials__item reviews__socials__item">
+                        <a class="socials__link main-slider__socials__link reviews__socials-link"
+                          href="https://twitter.com/">
+                          <span class="visually-hidden">Twitter</span>
+                          <svg class='socials__svg-twitter main-slider__socials__svg-twitter' width='14' height='10'>
+                            <use xlink:href='img/sprite.svg#icon-twitter-reviews'></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item main-slider__item">
+              <div class="main-slider__img-container reviews__img-container">
+                <img class="main-slider__img" src="img/content/desktop/petrova-reviews.jpg" alt="Маргарита Петрова"
+                  width="481" height="331">
+              </div>
+              <div class="main-slider__content main-slider__content--reviews-section">
+                <div class="main-slider__content-wrapper main-slider__content-wrapper--reviews-section">
+                  <p class="main-slider__name-employee main-slider__name-employee--reviews-section">Маргарита Петрова
+                  </p>
+                  <blockquote class="main-slider__employee-quote main-slider__employee-quote--reviews-section">Это
+                    лучший питомник из тех, что я видела! Отличный, высококвалифицированный персонал, шикарные условия
+                    содержания Мейн-Кунов, грамотные ветеринары, ну и разумеется просто абалденные котики.
+                  </blockquote>
+                  <div class="reviews__date-socials-container">
+                    <time class="reviews__date" datetime="2020-01-24">24 января 2020</time>
+                    <ul class="socials main-slider__socials reviews__socials">
+                      <li class="socials__item main-slider__socials__item reviews__socials__item">
+                        <a class="socials__link main-slider__socials__link reviews__socials-link"
+                          href="https://vk.com/">
+                          <span class="visually-hidden">Вконтакте</span>
+                          <svg class='socials__svg-vk main-slider__socials__svg-vk' width='13' height='8'>
+                            <use xlink:href='img/sprite.svg#icon-vk-reviews'></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item main-slider__socials__item reviews__socials__item">
+                        <a class="socials__link main-slider__socials__link reviews__socials-link"
+                          href="https://twitter.com/">
+                          <span class="visually-hidden">Twitter</span>
+                          <svg class='socials__svg-twitter main-slider__socials__svg-twitter' width='14' height='10'>
+                            <use xlink:href='img/sprite.svg#icon-twitter-reviews'></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev main-slider__btn-prev main-slider__btn-prev--reviews-section"
+            type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon main-slider__btn-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next main-slider__btn-next main-slider__btn-next--reviews-section"
+            type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
+            <span class="carousel-control-next-icon main-slider__btn-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Слайдер "отзывы" -->
       </div>
     </section>
-
   </main>
 
   <footer class="page-footer">
-    <div class="container">
-      <a class="logo" href="#">
-        <svg class='logo__svg' width='' height=''>
-          <use xlink:href='img/sprite.svg#'></use>
+    <div class="container page-footer__container">
+      <a class="logo page-footer__logo" href="#">
+        <svg class='logo__svg page-footer__logo-svg' width='47' height='22'>
+          <use xlink:href='img/sprite.svg#icon-logo-footer'></use>
         </svg>
       </a>
       <ul class="socials page-footer__socials">
-        <li class="socials__item page-footer__socials__item">
-          <a class="socials__link page-footer__socials__link" href="#">Facebook</a>
+        <li class="socials__item page-footer__socials-item">
+          <a class="socials__link page-footer__socials-link" href="https://facebook.com/">
+            <span class="visually-hidden">Facebook</span>
+            <svg class='page-footer__socials-svg' width='7' height='15'>
+              <use xlink:href='img/sprite.svg#icon-facebook-footer'></use>
+            </svg>
+          </a>
         </li>
-        <li class="socials__item page-footer__socials__item">
-          <a class="socials__link page-footer__socials__link" href="#">Twitter</a>
+        <li class="socials__item page-footer__socials-item">
+          <a class="socials__link page-footer__socials-link" href="https://twitter.com/">
+            <span class="visually-hidden">Twitter</span>
+            <svg class='page-footer__socials-svg' width='20' height='14'>
+              <use xlink:href='img/sprite.svg#icon-twitter-footer'></use>
+            </svg>
+          </a>
         </li>
-        <li class="socials__item page-footer__socials__item">
-          <a class="socials__link page-footer__socials__link" href="#">Вконтакте</a>
+        <li class="socials__item page-footer__socials-item">
+          <a class="socials__link page-footer__socials-link" href="https://vk.com/">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg class='page-footer__socials-svg' width='21' height='12'>
+              <use xlink:href='img/sprite.svg#icon-vk-footer'></use>
+            </svg>
+          </a>
         </li>
       </ul>
       <p class="page-footer__address">Новосибирск, Пушкинский проспект, 19</p>
-      <a class="page-footer__phone" href="tel:+73839006465" aria-label="Контактный телефон +7 (383) 900-64-65">+7 (383)
+      <a class="page-footer__phone" href="tel:+73839006465" aria-label="Контактный телефон +7 (383) 900-64-65">+7
+        (383)
         900-64-65</a>
     </div>
   </footer>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
   <script src="js/main.js" type="module"></script>
 </body>
 

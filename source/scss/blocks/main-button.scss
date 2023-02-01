@@ -1,0 +1,19 @@
+.main-button {
+  display: block;
+  width: 200px;
+  font-weight: $roboto-bold;
+  font-size: $text-secondary-size;
+  line-height: 16px;
+  color: $main-white;
+  border: 1px solid $color-desc;
+  padding: 18px 35px;
+  transition: background-color 0.5s ease-out;
+}
+
+.main-button:hover {
+  background-color: $color-desc;
+}
+
+.main-button:active {
+  opacity: 0.5;
+}

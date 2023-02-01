@@ -1,0 +1,31 @@
+.page-header {
+
+  // .page-header__container
+  &__container {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 960px;
+  }
+
+  // .page-header__content
+  &__content {
+    width: 338px;
+    margin-top: 114px;
+  }
+
+  // page-header__section-description-city
+  &__section-description-city {
+    margin-bottom: 18px;
+  }
+
+  // page-header__main-title
+  &__main-title {
+    margin-bottom: 31px;
+  }
+
+  // page-header__main-button
+  &__main-button {
+    margin-top: 52px;
+  }
+}

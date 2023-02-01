@@ -1,0 +1,23 @@
+.gallery-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 48px;
+
+  &__item:not(:last-child) {
+    margin-right: 43px;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    font-weight: $roboto-medium;
+    font-size: $text-alternate-size;
+    line-height: 21px;
+    color: $disabled;
+  }
+
+  &__button--active {
+    color: $main-white;
+  }
+}

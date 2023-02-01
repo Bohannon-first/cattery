@@ -1,0 +1,22 @@
+.advantages {
+  background-color: $color-secondary-bgc;
+  padding-top: 83px;
+  padding-bottom: 99px;
+
+  // advantages__container
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // advantages__secondary-title
+  &__secondary-title {
+    margin-bottom: 23px;
+  }
+
+  // advantages__section-description
+  &__section-description {
+    margin-bottom: 47px;
+  }
+}

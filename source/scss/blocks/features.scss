@@ -1,0 +1,29 @@
+.features {
+  background-color: $color-main-bgc;
+
+  // features__container
+  &__container {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 966px;
+
+    background-image: url('../img/background/Desktop/features-bgc-mein-kun.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 33px;
+  }
+
+  // features__secondary-title
+  &__secondary-title {
+    margin-bottom: 23px;
+  }
+
+  &__section-description {
+    width: 745px;
+    text-align: center;
+    margin-bottom: 33px;
+  }
+}
