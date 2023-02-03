@@ -4,6 +4,11 @@
   justify-content: space-between;
   gap: 30px;
 
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    gap: 42px;
+  }
+
   // .advantages-list__item
   &__item {
     display: flex;
@@ -13,6 +18,10 @@
     height: 301px;
     padding: 17px 20px;
     background-color: $color-main-bgc;
+
+    @media (max-width: $tablet-width) {
+      height: 306px;
+    }
   }
 
   &__item:hover &__link {

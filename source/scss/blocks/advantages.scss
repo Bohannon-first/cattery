@@ -18,5 +18,9 @@
   // advantages__section-description
   &__section-description {
     margin-bottom: 47px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 58px;
+    }
   }
 }

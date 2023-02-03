@@ -5,6 +5,10 @@
   &__secondary-title {
     margin-bottom: 58px;
     text-align: center;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 143px;
+    }
   }
 
   // reviews__img-container
@@ -14,6 +18,14 @@
     overflow: hidden;
     top: 24px;
     left: -17px;
+
+    @media (max-width: $tablet-width) {
+      width: 302px;
+      height: 208px;
+      bottom: initial;
+      top: -91px;
+      right: 193px;
+    }
   }
 
   // reviews__date-socials-container
@@ -21,6 +33,10 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
+    @media (max-width: $tablet-width) {
+      justify-content: center;
+    }
   }
 
   // reviews__date
@@ -50,5 +66,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .main-slider__item.active {
+    justify-content: center;
   }
 }

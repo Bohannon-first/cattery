@@ -2,8 +2,14 @@
   background-color: $color-secondary-bgc;
   padding: 83px 50px 72px 50px;
 
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    padding-top: 85px;
+    padding-bottom: 193px;
+  }
+
   &__container {
-    min-width: 1188px;
+    max-width: 1188px;
   }
 
   &__secondary-title {
@@ -14,5 +20,25 @@
   &__section-description {
     margin-bottom: 22px;
     text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+
+    // main-slider__btn-prev
+    .main-slider__btn-prev {
+      position: absolute;
+      top: 434px;
+      // bottom: -562px;
+      left: 326px;
+      height: 100px;
+    }
+
+    // main-slider__btn-next
+    .main-slider__btn-next {
+      position: absolute;
+      top: 434px;
+      height: 100px;
+      right: 61px;
+    }
   }
 }

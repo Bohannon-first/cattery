@@ -2,16 +2,27 @@
   display: flex;
   flex-flow: row wrap;
   gap: 42px;
+  width: 100%;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+    gap: 23px;
+  }
 
   // .care-list__item
   &__item {
     position: relative;
-    width: 558px;
+    max-width: 558px;
+    width: 48%;
     min-height: 165px;
     border: 0.5px solid $color-desc;
     padding: 38px 78px 20px 59px;
     cursor: pointer;
     user-select: none;
+
+    @media (max-width: $tablet-width) {
+      width: initial;
+    }
   }
 
   // care-list__rules-item

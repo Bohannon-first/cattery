@@ -2,6 +2,10 @@
   background-color: $color-main-bgc;
   padding: 73px 0;
 
+  @media (max-width: $tablet-width) {
+    padding-top: 136px;
+  }
+
   // faq__container
   &__container {
     display: flex;
@@ -12,6 +16,10 @@
   // faq__secondary-title
   &__secondary-title {
     margin-bottom: 23px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 33px;
+    }
   }
 
   // faq__section-description
@@ -24,6 +32,10 @@
     width: 793px;
     margin: 0;
     padding: 0;
+
+    @media (max-width: $tablet-width) {
+      width: 553px;
+    }
   }
 
   // faq__list-item
@@ -37,6 +49,14 @@
     user-select: none;
 
     transition: all 0.5s ease-out;
+
+    @media (max-width: $tablet-width) {
+      min-height: 77px;
+      margin-bottom: 23px;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   // faq__question
@@ -51,6 +71,11 @@
     color: $color-desc;
     margin-right: 32px;
     content: "0" counter(list-item) " ";
+
+    @media (max-width: $tablet-width) {
+      font-size: 50px;
+      line-height: 58px;
+    }
   }
 
   // faq__list-rules-item
@@ -89,6 +114,11 @@
     background-color: $color-desc;
 
     transition: all 0.5s ease-out;
+
+    @media (max-width: $tablet-width) {
+      top: 53%;
+      left: 60%;
+    }
   }
 
   &__button-vertical-line {

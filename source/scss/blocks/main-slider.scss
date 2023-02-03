@@ -4,12 +4,20 @@
   &__wrapper {
     max-width: 973px;
     margin: 0 auto;
+
+    @media (max-width: $tablet-width) {
+      overflow: visible;
+    }
   }
 
   &__item.active {
     display: flex;
     justify-content: flex-end;
     position: relative;
+
+    @media (max-width: $tablet-width) {
+      justify-content: flex-start;
+    }
   }
 
   // .main-slider__img-container
@@ -20,6 +28,15 @@
     width: 360px;
     height: 356px;
     overflow: hidden;
+
+    @media (max-width: $tablet-width) {
+      width: 207px;
+      height: 209px;
+      top: initial;
+      left: initial;
+      bottom: -100px;
+      right: 108px;
+    }
   }
 
   // .main-slider__content
@@ -29,12 +46,21 @@
     width: 660px;
     padding: 23px 34px 23px 26px;
     margin-left: auto;
+
+    @media (max-width: $tablet-width) {
+      width: 649px;
+      margin-left: 0;
+    }
   }
 
   // main-slider__content-wrapper
   &__content-wrapper {
     background-color: $color-main-bgc;
     padding: 69px 98px 59px 98px;
+
+    @media (max-width: $tablet-width) {
+      padding-right: 90px;
+    }
   }
 
   // .main-slider__name-employee
@@ -78,12 +104,26 @@
 
   // main-slider__btn-prev
   &__btn-prev {
-    left: -60px;
+    // left: -60px;
+    left: -5px;
+    width: 5%;
+
+    @media (max-width: $tablet-width) {
+      bottom: -560px;
+      left: 335px
+    }
   }
 
   // main-slider__btn-next
   &__btn-next {
-    right: -60px;
+    // right: -60px;
+    width: 5%;
+    right: -5px;
+
+    @media (max-width: $tablet-width) {
+      bottom: -560px;
+      right: -11px;
+    }
   }
 
   &__btn-icon-prev {
@@ -103,18 +143,30 @@
   // Блок reviews
   // main-slider__wrapper--reviews-section
   &__wrapper--reviews-section {
-    min-width: 1021px;
+    max-width: 1021px;
   }
 
   // main-slider__content-wrapper--reviews-section
   &__content-wrapper--reviews-section {
     background-color: transparent;
+
+    @media (max-width: $tablet-width) {
+      text-align: center;
+      padding-top: 157px;
+      padding-bottom: 33px;
+    }
   }
 
   // main-slider__content--reviews-section
   &__content--reviews-section {
     border: none;
     width: 640px;
+
+    @media (max-width: $tablet-width) {
+      width: 578px;
+      padding: 0;
+      margin: 0 auto;
+    }
   }
 
   // main-slider__name-employee--reviews-section
@@ -127,15 +179,41 @@
     font-size: $text-secondary-size;
     line-height: $third-interlining;
     color: $color-text-reviews;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 35px;
+    }
   }
 
   // main-slider__btn-prev--reviews-section
   &__btn-prev--reviews-section {
-    left: -90px;
+
+    @media (max-width: $tablet-width) {
+      top: 30px;
+      left: 100px;
+      bottom: initial;
+      width: 9%;
+
+      .main-slider__btn-icon-prev {
+        background-image: url('../img/icons/icon-arrow-left.png');
+        width: 60px;
+      }
+    }
   }
 
   // main-slider__btn-next--reviews-section
   &__btn-next--reviews-section {
-    right: -90px;
+
+    @media (max-width: $tablet-width) {
+      top: 30px;
+      right: 100px;
+      bottom: initial;
+      width: 9%;
+
+      .main-slider__btn-icon-next {
+        background-image: url('../img/icons/icon-arrow-right.png');
+        width: 60px;
+      }
+    }
   }
 }

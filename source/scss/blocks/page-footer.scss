@@ -2,6 +2,12 @@
   min-height: 302px;
   background-color: $color-secondary-bgc;
 
+  @media (max-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    min-height: 105px;
+  }
+
   // .page-footer__container
   &__container {
     display: flex;
@@ -23,6 +29,10 @@
   // page-footer__logo
   &__logo {
     margin: 0;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 
   // .page-footer__socials
@@ -34,17 +44,16 @@
     &::before {
       display: none;
     }
+
+    @media (max-width: $tablet-width) {
+      flex-direction: initial;
+    }
   }
 
   // .page-footer__socials-item
-  &__socials-item {}
-
   &__socials-item:not(:last-child) {
     margin-right: 9px;
   }
-
-  // .page-footer__socials-link
-  &__socials-link {}
 
   // .page-footer__address
   &__address {
