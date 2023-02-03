@@ -14,6 +14,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center 33px;
+
+    @media (max-width: $tablet-width) {
+      background-image: url('../img/background/Tablet/features-bgc-mein-kun-tablet.png');
+      background-size: auto;
+      min-height: 760px;
+      background-position: center 120px;
+    }
   }
 
   // features__secondary-title
@@ -25,5 +32,9 @@
     width: 745px;
     text-align: center;
     margin-bottom: 33px;
+
+    @media (max-width: $tablet-width) {
+      width: 448px;
+    }
   }
 }

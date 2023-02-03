@@ -1,4 +1,18 @@
 .page-header {
+  background-color: $color-bgc-header;
+  background-image: url('../img/background/Desktop/bgc-header-desktop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  min-height: 684px;
+  padding-top: 46px;
+
+  @media (max-width: $tablet-width) {
+    background-image: url('../img/background/Tablet/bgc-header-tablet.png');
+    min-height: 595px;
+    padding-top: 28px;
+    padding-bottom: 46px;
+  }
 
   // .page-header__container
   &__container {
@@ -12,6 +26,10 @@
   &__content {
     width: 338px;
     margin-top: 114px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 90px;
+    }
   }
 
   // page-header__section-description-city
@@ -27,5 +45,17 @@
   // page-header__main-button
   &__main-button {
     margin-top: 52px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 60px;
+    }
+  }
+
+  // socials
+  .socials {
+    @media (max-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
   }
 }

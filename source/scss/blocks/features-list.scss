@@ -18,17 +18,38 @@
     height: 15px;
     background-color: $color-desc;
     border-radius: 50%;
+
+    @media (max-width: $tablet-width) {
+      width: 10px;
+      height: 10px;
+
+      top: 3px;
+      right: -17px;
+    }
   }
 
   &__item:nth-child(1) {
     top: 324px;
     left: -444px;
+
+    @media (max-width: $tablet-width) {
+      top: 303px;
+      left: -265px;
+      width: 139px;
+      text-align: right;
+    }
   }
 
   &__item:nth-child(2) {
     top: 591px;
     left: -470px;
-    // width: 212px;
+
+    @media (max-width: $tablet-width) {
+      top: 438px;
+      left: -278px;
+      width: 140px;
+      text-align: right;
+    }
   }
 
   &__item:nth-child(3) {
@@ -39,6 +60,12 @@
     &::before {
       display: none;
     }
+
+    @media (max-width: $tablet-width) {
+      top: 249px;
+      left: 282px;
+      width: 130px;
+    }
   }
 
   &__item:nth-child(4) {
@@ -48,6 +75,12 @@
     // Убрать первоначальный псевдоэлемент справа
     &::before {
       display: none;
+    }
+
+    @media (max-width: $tablet-width) {
+      top: 303px;
+      left: 256px;
+      width: 102px;
     }
   }
 
@@ -61,5 +94,12 @@
     height: 15px;
     background-color: $color-desc;
     border-radius: 50%;
+
+    @media (max-width: $tablet-width) {
+      width: 10px;
+      height: 10px;
+      top: 3px;
+      left: -19px;
+    }
   }
 }

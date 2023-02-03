@@ -13,4 +13,20 @@
     background-color: $color-socials-pseudo;
     transform: rotate(90deg);
   }
+
+  @media (max-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+
+    // socials__item
+    &__item {
+      margin-right: 11px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
