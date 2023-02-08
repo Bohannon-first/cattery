@@ -1,3 +1,19 @@
 .logo {
   margin: 0 auto;
+
+  // logo__svg--mobile
+  &__svg--mobile {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+    }
+  }
+
+  // logo__svg--desktop
+  &__svg--desktop {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
 }

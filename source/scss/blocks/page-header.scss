@@ -14,6 +14,13 @@
     padding-bottom: 46px;
   }
 
+  @media (max-width: $mobile-width) {
+    background-image: url('../img/background/Mobile/bgc-header-mobile.png');
+    min-height: 617px;
+    background-position: right bottom;
+    background-size: auto;
+  }
+
   // .page-header__container
   &__container {
     position: relative;
@@ -30,11 +37,21 @@
     @media (max-width: $tablet-width) {
       margin-top: 90px;
     }
+
+    @media (max-width: $mobile-width) {
+      width: inherit;
+      margin-top: 57px;
+      text-align: center;
+    }
   }
 
   // page-header__section-description-city
   &__section-description-city {
     margin-bottom: 18px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 20px;
+    }
   }
 
   // page-header__main-title
@@ -49,6 +66,13 @@
     @media (max-width: $tablet-width) {
       margin-bottom: 60px;
     }
+
+    @media (max-width: $mobile-width) {
+      margin: 0;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   // socials
@@ -56,6 +80,10 @@
     @media (max-width: $tablet-width) {
       flex-direction: row;
       justify-content: flex-start;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
     }
   }
 }

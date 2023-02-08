@@ -3,6 +3,11 @@
   padding-top: 83px;
   padding-bottom: 99px;
 
+  @media (max-width: $mobile-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   // advantages__container
   &__container {
     display: flex;
@@ -13,6 +18,11 @@
   // advantages__secondary-title
   &__secondary-title {
     margin-bottom: 23px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 35px;
+      text-align: center;
+    }
   }
 
   // advantages__section-description
@@ -21,6 +31,11 @@
 
     @media (max-width: $tablet-width) {
       margin-bottom: 58px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 40px;
+      text-align: center;
     }
   }
 }

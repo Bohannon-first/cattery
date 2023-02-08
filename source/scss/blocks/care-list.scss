@@ -9,6 +9,10 @@
     gap: 23px;
   }
 
+  @media (max-width: $mobile-width) {
+    gap: 30px;
+  }
+
   // .care-list__item
   &__item {
     position: relative;
@@ -22,6 +26,35 @@
 
     @media (max-width: $tablet-width) {
       width: initial;
+    }
+
+    @media (max-width: $mobile-width) {
+      padding: 25px 53px 25px 25px;
+    }
+  }
+
+  // Переопределение очередности элементов начиная с планшета
+  &__item:nth-child(1) {
+    @media (max-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &__item:nth-child(2) {
+    @media (max-width: $tablet-width) {
+      order: 3;
+    }
+  }
+
+  &__item:nth-child(3) {
+    @media (max-width: $tablet-width) {
+      order: 2;
+    }
+  }
+
+  &__item:nth-child(4) {
+    @media (max-width: $tablet-width) {
+      order: 4;
     }
   }
 
@@ -42,6 +75,11 @@
     font-size: 22px;
     line-height: 25px;
     margin-bottom: 12px;
+
+    @media (max-width: $mobile-width) {
+      font-size: $text-alternate-size;
+      line-height: $third-interlining;
+    }
   }
 
   // .care-list__desc
@@ -50,6 +88,10 @@
   &__desc-show-more {
     font-size: $text-secondary-size;
     line-height: $third-interlining;
+
+    @media (max-width: $mobile-width) {
+      line-height: $mobile-main-interlining;
+    }
   }
 
   // care-list__desc-show-more
@@ -62,6 +104,10 @@
     background-color: $color-bgc-header;
     z-index: 100;
     animation: showCareItem 0.5s ease 0s 1 normal forwards;
+
+    @media (max-width: $mobile-width) {
+      padding: 25px 57px 25px 25px;
+    }
   }
 
   &__button {
@@ -73,6 +119,10 @@
     height: 100%;
     border: none;
     padding: 0;
+
+    @media (max-width: $mobile-width) {
+      width: 46px;
+    }
   }
 
   &__svg {

@@ -2,6 +2,11 @@
   min-height: 302px;
   background-color: $color-secondary-bgc;
 
+  @media (max-width: $mobile-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -16,6 +21,11 @@
     max-width: 848px;
     padding-top: 68px;
     padding-bottom: 50px;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__container>* {
@@ -24,6 +34,10 @@
 
   &__container>*:not(:nth-child(4n)) {
     margin-right: 25px;
+
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+    }
   }
 
   // page-footer__logo
@@ -32,6 +46,17 @@
 
     @media (max-width: $tablet-width) {
       display: none;
+    }
+  }
+
+  // page-footer__logo-mobile
+  &__logo-mobile {
+    display: none;
+
+    @media (max-width: $mobile-width) {
+      display: block;
+      order: 4;
+      margin: 0;
     }
   }
 
@@ -48,6 +73,11 @@
     @media (max-width: $tablet-width) {
       flex-direction: initial;
     }
+
+    @media (max-width: $mobile-width) {
+      order: 3;
+      margin-bottom: 26px;
+    }
   }
 
   // .page-footer__socials-item
@@ -60,6 +90,11 @@
     font-weight: $roboto-regular;
     font-size: $text-secondary-size;
     color: $color-text-address;
+
+    @media (max-width: $mobile-width) {
+      line-height: $mobile-main-interlining;
+      order: 1;
+    }
   }
 
   // .page-footer__phone
@@ -67,5 +102,11 @@
     font-weight: $roboto-bold;
     font-size: $text-secondary-size;
     color: $color-text-phone;
+
+    @media (max-width: $mobile-width) {
+      line-height: $mobile-main-interlining;
+      margin-bottom: 26px;
+      order: 2;
+    }
   }
 }

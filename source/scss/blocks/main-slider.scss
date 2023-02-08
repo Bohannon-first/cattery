@@ -37,6 +37,13 @@
       bottom: -100px;
       right: 108px;
     }
+
+    @media (max-width: $mobile-width) {
+      top: -61px;
+      left: 82px;
+      width: 126px;
+      height: 126px;
+    }
   }
 
   // .main-slider__content
@@ -51,6 +58,12 @@
       width: 649px;
       margin-left: 0;
     }
+
+    @media (max-width: $mobile-width) {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
   }
 
   // main-slider__content-wrapper
@@ -61,6 +74,14 @@
     @media (max-width: $tablet-width) {
       padding-right: 90px;
     }
+
+    @media (max-width: $mobile-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 11px 16px;
+      padding-top: 83px;
+    }
   }
 
   // .main-slider__name-employee
@@ -70,6 +91,11 @@
     line-height: 28px;
     color: $color-desc;
     margin-bottom: 10px;
+
+    @media (max-width: $mobile-width) {
+      font-size: $text-alternate-size;
+      line-height: $mobile-main-interlining;
+    }
   }
 
   // .main-slider__employee-position
@@ -78,11 +104,24 @@
     line-height: $third-interlining;
     color: $color-desc;
     margin-bottom: 20px;
+
+    @media (max-width: $mobile-width) {
+      font-size: $text-secondary-size;
+      line-height: $mobile-main-interlining;
+      margin-bottom: 15px;
+    }
   }
 
   // .main-slider__employee-quote
   &__employee-quote {
     margin-bottom: 43px;
+
+    @media (max-width: $mobile-width) {
+      font-size: $text-secondary-size;
+      line-height: $mobile-main-interlining;
+      text-align: center;
+      margin-bottom: 15px;
+    }
   }
 
   // main-slider__socials
@@ -155,6 +194,12 @@
       padding-top: 157px;
       padding-bottom: 33px;
     }
+
+    @media (max-width: $mobile-width) {
+      justify-content: flex-end;
+      min-height: 357px;
+      padding-bottom: 40px;
+    }
   }
 
   // main-slider__content--reviews-section
@@ -167,11 +212,22 @@
       padding: 0;
       margin: 0 auto;
     }
+
+    @media (max-width: $mobile-width) {
+      width: inherit;
+      background-color: $color-bgc-header;
+    }
   }
 
   // main-slider__name-employee--reviews-section
   &__name-employee--reviews-section {
     color: $main-white;
+
+    @media (max-width: $mobile-width) {
+      font-size: $text-alternate-size;
+      line-height: $third-interlining;
+      margin-bottom: 25px;
+    }
   }
 
   // main-slider__employee-quote--reviews-section
@@ -182,6 +238,11 @@
 
     @media (max-width: $tablet-width) {
       margin-bottom: 35px;
+    }
+
+    @media (max-width: $mobile-width) {
+      line-height: $mobile-main-interlining;
+      margin-bottom: 25px;
     }
   }
 
@@ -199,6 +260,17 @@
         width: 60px;
       }
     }
+
+    @media (max-width: $mobile-width) {
+      top: -10px;
+      left: -10px;
+
+      .main-slider__btn-icon-prev {
+        background-image: url('../img/icons/icon-btn-prev-small.svg');
+        width: 8px;
+        height: 18px;
+      }
+    }
   }
 
   // main-slider__btn-next--reviews-section
@@ -213,6 +285,17 @@
       .main-slider__btn-icon-next {
         background-image: url('../img/icons/icon-arrow-right.png');
         width: 60px;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      top: -10px;
+      right: -10px;
+
+      .main-slider__btn-icon-next {
+        background-image: url('../img/icons/icon-btn-next-small.svg');
+        width: 8px;
+        height: 18px;
       }
     }
   }

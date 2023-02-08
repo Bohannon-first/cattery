@@ -22,6 +22,10 @@
       grid-row: initial;
       place-self: initial;
     }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
 
   // gallery-images__photo2
@@ -39,6 +43,11 @@
       width: 474px;
       height: auto;
       z-index: 100;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 234px;
+      max-height: 248px;
     }
   }
 
@@ -63,6 +72,10 @@
       grid-column: initial;
       grid-row: initial;
       place-self: initial;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
     }
   }
 }
