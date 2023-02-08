@@ -14,7 +14,7 @@ $color-text-phone: #fdf2e6;
 
 // Переменные вьюпортов
 $tablet-width: 1159px;
-$mobile-tablet: 767px;
+$mobile-width: 767px;
 
 // Переменные шрифтов
 $roboto: 'Roboto', 'Verdana', sans-serif;
@@ -31,6 +31,7 @@ $yeseva-one-regular: 400;
 $title-main-size: 52px;
 $title-second-size: 36px;
 $text-main-size: 16px;
+$title-secondary-mobile: 28px;
 $text-secondary-size: 14px;
 $text-alternate-size: 18px;
 $text-small-size: 12px;
@@ -39,5 +40,7 @@ $text-small-size: 12px;
 $main-interlining: 26px;
 $secondary-interlining: 24px;
 $third-interlining: 22px;
+$mobile-main-interlining: 19px;
+$mobile-secondary-interlining: 32px;
 $main-title-interlining: 60px;
 $secondary-title-interlining: 41px;

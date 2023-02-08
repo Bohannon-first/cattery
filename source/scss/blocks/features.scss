@@ -21,11 +21,22 @@
       min-height: 760px;
       background-position: center 120px;
     }
+
+    @media (max-width: $mobile-width) {
+      background-image: url('../img/background/Mobile/features-bgc-mein-kun-mobile.png');
+      min-height: 810px;
+      background-position: center 220px;
+    }
   }
 
   // features__secondary-title
   &__secondary-title {
     margin-bottom: 23px;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 35px;
+      text-align: center;
+    }
   }
 
   &__section-description {
@@ -35,6 +46,10 @@
 
     @media (max-width: $tablet-width) {
       width: 448px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: inherit;
     }
   }
 }

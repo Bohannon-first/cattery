@@ -2,4 +2,9 @@
   color: $color-desc;
   font-weight: $roboto-regular;
   line-height: $secondary-interlining;
+
+  @media (max-width: $mobile-width) {
+    font-size: $text-secondary-size;
+    line-height: $mobile-main-interlining;
+  }
 }

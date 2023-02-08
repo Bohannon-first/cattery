@@ -1,12 +1,27 @@
 .features-list {
   position: absolute;
 
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: inherit;
+    padding-left: 20px;
+    margin-top: auto;
+  }
+
   // .features-list__item
   &__item {
     position: relative;
     font-size: $text-secondary-size;
     line-height: $third-interlining;
     width: 213px;
+
+    @media (max-width: $mobile-width) {
+      position: static;
+      margin-bottom: 30px;
+      line-height: $mobile-main-interlining;
+    }
   }
 
   &__item::before {
@@ -26,6 +41,13 @@
       top: 3px;
       right: -17px;
     }
+
+    @media (max-width: $mobile-width) {
+      width: 8px;
+      height: 8px;
+      left: -18px;
+      top: 6px;
+    }
   }
 
   &__item:nth-child(1) {
@@ -38,6 +60,15 @@
       width: 139px;
       text-align: right;
     }
+
+    @media (max-width: $mobile-width) {
+      position: relative;
+      width: 100%;
+      text-align: left;
+      top: 0;
+      left: 0;
+      order: 1;
+    }
   }
 
   &__item:nth-child(2) {
@@ -49,6 +80,15 @@
       left: -278px;
       width: 140px;
       text-align: right;
+    }
+
+    @media (max-width: $mobile-width) {
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      text-align: left;
+      order: 4;
     }
   }
 
@@ -66,6 +106,15 @@
       left: 282px;
       width: 130px;
     }
+
+    @media (max-width: $mobile-width) {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      order: 2;
+    }
   }
 
   &__item:nth-child(4) {
@@ -81,6 +130,15 @@
       top: 303px;
       left: 256px;
       width: 102px;
+    }
+
+    @media (max-width: $mobile-width) {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: left;
+      order: 3;
     }
   }
 
@@ -100,6 +158,13 @@
       height: 10px;
       top: 3px;
       left: -19px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 8px;
+      height: 8px;
+      left: -18px;
+      top: 6px;
     }
   }
 }

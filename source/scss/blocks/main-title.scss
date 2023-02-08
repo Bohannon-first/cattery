@@ -3,4 +3,9 @@
   font-size: $title-main-size;
   font-weight: $yeseva-one-regular;
   line-height: $main-title-interlining;
+
+  @media (max-width: $mobile-width) {
+    font-size: $title-second-size;
+    line-height: $secondary-title-interlining;
+  }
 }

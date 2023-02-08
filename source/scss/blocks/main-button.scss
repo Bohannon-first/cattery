@@ -8,6 +8,13 @@
   border: 1px solid $color-desc;
   padding: 18px 35px;
   transition: background-color 0.5s ease-out;
+
+  @media (max-width: $mobile-width) {
+    width: 141px;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 12px 17px;
+  }
 }
 
 .main-button:hover {
