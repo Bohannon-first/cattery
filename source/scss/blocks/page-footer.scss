@@ -104,6 +104,7 @@
     color: $color-text-phone;
 
     @media (max-width: $mobile-width) {
+      font-weight: $roboto-regular;
       line-height: $mobile-main-interlining;
       margin-bottom: 26px;
       order: 2;
