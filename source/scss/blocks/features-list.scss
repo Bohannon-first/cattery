@@ -52,7 +52,7 @@
 
   &__item:nth-child(1) {
     top: 324px;
-    left: -444px;
+    left: -397px;
 
     @media (max-width: $tablet-width) {
       top: 303px;
@@ -73,7 +73,7 @@
 
   &__item:nth-child(2) {
     top: 591px;
-    left: -470px;
+    left: -400px;
 
     @media (max-width: $tablet-width) {
       top: 438px;
@@ -94,7 +94,7 @@
 
   &__item:nth-child(3) {
     top: 369px;
-    left: 468px;
+    left: 502px;
 
     // Убрать первоначальный псевдоэлемент справа
     &::before {
@@ -119,7 +119,7 @@
 
   &__item:nth-child(4) {
     top: 539px;
-    left: 427px;
+    left: 443px;
 
     // Убрать первоначальный псевдоэлемент справа
     &::before {

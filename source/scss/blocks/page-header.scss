@@ -32,7 +32,7 @@
   // .page-header__content
   &__content {
     width: 338px;
-    margin-top: 114px;
+    margin-top: 112px;
 
     @media (max-width: $tablet-width) {
       margin-top: 90px;
@@ -47,7 +47,7 @@
 
   // page-header__section-description-city
   &__section-description-city {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 
     @media (max-width: $mobile-width) {
       margin-bottom: 20px;
@@ -56,12 +56,12 @@
 
   // page-header__main-title
   &__main-title {
-    margin-bottom: 31px;
+    margin-bottom: 18px;
   }
 
   // page-header__main-button
   &__main-button {
-    margin-top: 52px;
+    margin-top: 46px;
 
     @media (max-width: $tablet-width) {
       margin-bottom: 60px;
@@ -75,8 +75,12 @@
     }
   }
 
-  // socials
-  .socials {
+  // page-header__socials
+  &__socials {
+    position: relative;
+    top: 38px;
+    left: -124px;
+
     @media (max-width: $tablet-width) {
       flex-direction: row;
       justify-content: flex-start;

@@ -27,7 +27,7 @@
 
   // pets__section-description
   &__section-description {
-    margin-bottom: 38px;
+    margin-bottom: 33px;
 
     @media (max-width: $mobile-width) {
       margin-bottom: 40px;
@@ -38,7 +38,7 @@
   &__main-button {
     display: block;
     margin: 0 auto;
-    margin-top: 55px;
+    margin-top: 65px;
 
     @media (max-width: $mobile-width) {
       margin-top: 45px;
@@ -107,7 +107,8 @@
     [data-bs-target] {
       box-sizing: border-box;
       color: $main-white;
-      width: 75px;
+      // width: 75px;
+      margin-right: 57px;
       text-indent: 0;
 
       @media (max-width: $mobile-width) {

@@ -8,12 +8,12 @@
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 966px;
+    min-height: 925px;
 
     background-image: url('../img/background/Desktop/features-bgc-mein-kun.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center 33px;
+    background-position: 59% 33px;
 
     @media (max-width: $tablet-width) {
       background-image: url('../img/background/Tablet/features-bgc-mein-kun-tablet.png');

@@ -101,6 +101,23 @@ img {
   padding: 0;
 }
 
+.socials {
+  position: relative;
+  top: 38px;
+  left: -100px;
+}
+
+.socials::before {
+  position: absolute;
+  content: "";
+  top: -62px;
+  left: -30px;
+  width: 77px;
+  height: 0.5px;
+  background-color: rgba(255, 255, 255, 0.61);
+  transform: rotate(90deg);
+}
+
 .page-header {
   background-color: #181617;
   background-image: url("../img/background/Desktop/bgc-header-desktop.png");
@@ -120,19 +137,25 @@ img {
 
 .page-header__content {
   width: 338px;
-  margin-top: 114px;
+  margin-top: 112px;
 }
 
 .page-header__section-description-city {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .page-header__main-title {
-  margin-bottom: 31px;
+  margin-bottom: 18px;
 }
 
 .page-header__main-button {
-  margin-top: 52px;
+  margin-top: 46px;
+}
+
+.page-header__socials {
+  position: relative;
+  top: 38px;
+  left: -124px;
 }
 
 .section-description {
@@ -176,23 +199,6 @@ img {
   display: none;
 }
 
-.socials {
-  position: relative;
-  top: 38px;
-  left: -100px;
-}
-
-.socials::before {
-  position: absolute;
-  content: "";
-  top: -62px;
-  left: -30px;
-  width: 77px;
-  height: 0.5px;
-  background-color: rgba(255, 255, 255, 0.61);
-  transform: rotate(90deg);
-}
-
 .pets {
   background-color: #1f1c1d;
   padding-top: 223px;
@@ -208,13 +214,13 @@ img {
 }
 
 .pets__section-description {
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 }
 
 .pets__main-button {
   display: block;
   margin: 0 auto;
-  margin-top: 55px;
+  margin-top: 65px;
 }
 
 .pets__slider-btn-icon-prev {
@@ -252,7 +258,7 @@ img {
 .pets__indicators [data-bs-target] {
   box-sizing: border-box;
   color: #ffffff;
-  width: 75px;
+  margin-right: 57px;
   text-indent: 0;
 }
 
@@ -332,11 +338,11 @@ img {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 966px;
+  min-height: 925px;
   background-image: url("../img/background/Desktop/features-bgc-mein-kun.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center 33px;
+  background-position: 59% 33px;
 }
 
 .features__secondary-title {
@@ -373,17 +379,17 @@ img {
 
 .features-list__item:nth-child(1) {
   top: 324px;
-  left: -444px;
+  left: -397px;
 }
 
 .features-list__item:nth-child(2) {
   top: 591px;
-  left: -470px;
+  left: -400px;
 }
 
 .features-list__item:nth-child(3) {
   top: 369px;
-  left: 468px;
+  left: 502px;
 }
 
 .features-list__item:nth-child(3)::before {
@@ -392,7 +398,7 @@ img {
 
 .features-list__item:nth-child(4) {
   top: 539px;
-  left: 427px;
+  left: 443px;
 }
 
 .features-list__item:nth-child(4)::before {
@@ -489,7 +495,7 @@ img {
   background-size: cover;
   background-position: center center;
   padding: 84px 50px;
-  min-height: 685px;
+  min-height: 645px;
 }
 
 .care__secondary-title {
@@ -967,6 +973,21 @@ img {
     padding: 0 40px;
   }
 
+  .socials {
+    position: static;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+  }
+
+  .socials__item {
+    margin-right: 11px;
+  }
+
+  .socials::before {
+    display: none;
+  }
+
   .page-header {
     background-image: url("../img/background/Tablet/bgc-header-tablet.png");
     min-height: 595px;
@@ -982,24 +1003,9 @@ img {
     margin-bottom: 60px;
   }
 
-  .page-header .socials {
+  .page-header__socials {
     flex-direction: row;
     justify-content: flex-start;
-  }
-
-  .socials {
-    position: static;
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: flex-end;
-  }
-
-  .socials__item {
-    margin-right: 11px;
-  }
-
-  .socials::before {
-    display: none;
   }
 
   .pets {
@@ -1332,7 +1338,7 @@ img {
     margin-right: auto;
   }
 
-  .page-header .socials {
+  .page-header__socials {
     display: none;
   }
 
