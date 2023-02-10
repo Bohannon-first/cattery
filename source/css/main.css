@@ -999,8 +999,13 @@ img {
     margin-top: 90px;
   }
 
+  .page-header__section-description-city {
+    margin-bottom: 19px;
+  }
+
   .page-header__main-button {
-    margin-bottom: 60px;
+    margin-bottom: 51px;
+    margin-top: 51px;
   }
 
   .page-header__socials {
@@ -1009,7 +1014,11 @@ img {
   }
 
   .pets {
-    padding-top: 100px;
+    padding-top: 95px;
+  }
+
+  .pets__main-button {
+    margin-top: 23px;
   }
 
   .pets__slider-btn-prev,
@@ -1059,8 +1068,9 @@ img {
   .features__container {
     background-image: url("../img/background/Tablet/features-bgc-mein-kun-tablet.png");
     background-size: auto;
-    min-height: 760px;
-    background-position: center 120px;
+    min-height: 748px;
+    background-position: 53% 139px;
+    padding-top: 7px;
   }
 
   .features__section-description {
@@ -1075,28 +1085,28 @@ img {
   }
 
   .features-list__item:nth-child(1) {
-    top: 303px;
-    left: -265px;
+    top: 313px;
+    left: -255px;
     width: 139px;
     text-align: right;
   }
 
   .features-list__item:nth-child(2) {
     top: 438px;
-    left: -278px;
+    left: -273px;
     width: 140px;
     text-align: right;
   }
 
   .features-list__item:nth-child(3) {
     top: 249px;
-    left: 282px;
+    left: 290px;
     width: 130px;
   }
 
   .features-list__item:nth-child(4) {
-    top: 303px;
-    left: 256px;
+    top: 316px;
+    left: 266px;
     width: 102px;
   }
 
@@ -1105,6 +1115,10 @@ img {
     height: 10px;
     top: 3px;
     left: -19px;
+  }
+
+  .advantages {
+    padding-bottom: 112px;
   }
 
   .advantages__section-description {
@@ -1121,13 +1135,20 @@ img {
     min-height: 248px;
   }
 
+  .care {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 91px;
+    padding-bottom: 106px;
+  }
+
   .care__secondary-title {
     margin-bottom: 37px;
   }
 
   .care-list {
     justify-content: center;
-    gap: 23px;
+    gap: 26px;
   }
 
   .care-list__item {
@@ -1193,7 +1214,9 @@ img {
   }
 
   .main-slider__content-wrapper {
-    padding-right: 90px;
+    padding-top: 75px;
+    padding-right: 80px;
+    padding-left: 109px;
   }
 
   .main-slider__btn-prev {
@@ -1247,11 +1270,11 @@ img {
   }
 
   .faq {
-    padding-top: 136px;
+    padding-top: 144px;
   }
 
   .faq__secondary-title {
-    margin-bottom: 33px;
+    margin-bottom: 20px;
   }
 
   .faq__list {
