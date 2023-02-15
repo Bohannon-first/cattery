@@ -20,10 +20,6 @@
   // pets__secondary-title
   &__secondary-title {
     margin-bottom: 23px;
-
-    // @media (max-width: $mobile-width) {
-    //   margin-bottom: 23px;
-    // }
   }
 
   // pets__section-description
@@ -112,7 +108,6 @@
     [data-bs-target] {
       box-sizing: border-box;
       color: $main-white;
-      // width: 75px;
       margin-right: 57px;
       text-indent: 0;
 

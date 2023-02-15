@@ -62,7 +62,6 @@
     min-height: 110px;
     cursor: pointer;
     user-select: none;
-
     transition: all 0.5s ease-out;
 
     @media (max-width: $tablet-width) {
@@ -111,7 +110,6 @@
 
     @media (max-width: $mobile-width) {
       font-size: 0;
-      // content: '';
     }
   }
 
@@ -154,7 +152,6 @@
     width: 18px;
     height: 2px;
     background-color: $color-desc;
-
     transition: all 0.5s ease-out;
 
     @media (max-width: $tablet-width) {
@@ -188,7 +185,6 @@
     margin-bottom: 15px;
   }
 }
-
 
 // Анимация открытия аккордеона в блоке faq
 @keyframes showFaqAnswer {

@@ -1034,15 +1034,15 @@ img {
   }
 
   .gallery-images__photo1 {
+    grid-column: initial;
+    grid-row: initial;
+    place-self: initial;
     width: 470px;
     height: 197px;
     position: absolute;
     top: 50%;
     right: 40px;
     transform: translate(0, -50%);
-    grid-column: initial;
-    grid-row: initial;
-    place-self: initial;
   }
 
   .gallery-images__photo2 {
@@ -1054,15 +1054,15 @@ img {
   }
 
   .gallery-images__photo3 {
+    grid-column: initial;
+    grid-row: initial;
+    place-self: initial;
     width: 416px;
     height: 197px;
     position: absolute;
     top: 50%;
     left: 35px;
     transform: translate(0, -50%);
-    grid-column: initial;
-    grid-row: initial;
-    place-self: initial;
   }
 
   .features__container {
