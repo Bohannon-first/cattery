@@ -4,10 +4,18 @@
   background-size: cover;
   background-position: center center;
   padding: 84px 50px;
-  min-height: 685px;
+  min-height: 645px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 91px;
+    padding-bottom: 106px;
+  }
 
   @media (max-width: $mobile-width) {
-    padding: 60px 0;
+    padding-top: 51px;
+    padding-bottom: 60px;
   }
 
   // care__secondary-title
@@ -24,7 +32,7 @@
     }
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 37px;
+      margin-bottom: 32px;
 
       br {
         display: block;

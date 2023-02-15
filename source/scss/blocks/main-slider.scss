@@ -61,7 +61,9 @@
 
     @media (max-width: $mobile-width) {
       background-color: transparent;
+      width: inherit;
       border: none;
+      margin: 0 auto;
       padding: 0;
     }
   }
@@ -72,7 +74,9 @@
     padding: 69px 98px 59px 98px;
 
     @media (max-width: $tablet-width) {
-      padding-right: 90px;
+      padding-top: 75px;
+      padding-right: 80px;
+      padding-left: 109px;
     }
 
     @media (max-width: $mobile-width) {
@@ -95,6 +99,7 @@
     @media (max-width: $mobile-width) {
       font-size: $text-alternate-size;
       line-height: $mobile-main-interlining;
+      margin-bottom: 3px;
     }
   }
 
@@ -143,7 +148,6 @@
 
   // main-slider__btn-prev
   &__btn-prev {
-    // left: -60px;
     left: -5px;
     width: 5%;
 
@@ -155,7 +159,6 @@
 
   // main-slider__btn-next
   &__btn-next {
-    // right: -60px;
     width: 5%;
     right: -5px;
 

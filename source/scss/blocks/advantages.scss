@@ -3,8 +3,12 @@
   padding-top: 83px;
   padding-bottom: 99px;
 
+  @media (max-width: $tablet-width) {
+    padding-bottom: 112px;
+  }
+
   @media (max-width: $mobile-width) {
-    padding-top: 60px;
+    padding-top: 55px;
     padding-bottom: 60px;
   }
 
@@ -20,8 +24,9 @@
     margin-bottom: 23px;
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 35px;
+      margin-bottom: 23px;
       text-align: center;
+      width: 230px;
     }
   }
 

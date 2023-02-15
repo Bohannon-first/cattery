@@ -37,7 +37,6 @@
     @media (max-width: $tablet-width) {
       width: 10px;
       height: 10px;
-
       top: 3px;
       right: -17px;
     }
@@ -52,11 +51,11 @@
 
   &__item:nth-child(1) {
     top: 324px;
-    left: -444px;
+    left: -397px;
 
     @media (max-width: $tablet-width) {
-      top: 303px;
-      left: -265px;
+      top: 313px;
+      left: -255px;
       width: 139px;
       text-align: right;
     }
@@ -73,11 +72,11 @@
 
   &__item:nth-child(2) {
     top: 591px;
-    left: -470px;
+    left: -400px;
 
     @media (max-width: $tablet-width) {
       top: 438px;
-      left: -278px;
+      left: -273px;
       width: 140px;
       text-align: right;
     }
@@ -94,7 +93,7 @@
 
   &__item:nth-child(3) {
     top: 369px;
-    left: 468px;
+    left: 502px;
 
     // Убрать первоначальный псевдоэлемент справа
     &::before {
@@ -103,7 +102,7 @@
 
     @media (max-width: $tablet-width) {
       top: 249px;
-      left: 282px;
+      left: 290px;
       width: 130px;
     }
 
@@ -119,7 +118,7 @@
 
   &__item:nth-child(4) {
     top: 539px;
-    left: 427px;
+    left: 443px;
 
     // Убрать первоначальный псевдоэлемент справа
     &::before {
@@ -127,8 +126,8 @@
     }
 
     @media (max-width: $tablet-width) {
-      top: 303px;
-      left: 256px;
+      top: 316px;
+      left: 266px;
       width: 102px;
     }
 

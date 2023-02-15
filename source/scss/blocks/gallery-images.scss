@@ -10,17 +10,15 @@
     overflow: hidden;
 
     @media (max-width: $tablet-width) {
+      grid-column: initial;
+      grid-row: initial;
+      place-self: initial;
       width: 470px;
       height: 197px;
-
       position: absolute;
       top: 50%;
       right: 40px;
       transform: translate(0, -50%);
-
-      grid-column: initial;
-      grid-row: initial;
-      place-self: initial;
     }
 
     @media (max-width: $mobile-width) {
@@ -61,17 +59,15 @@
     overflow: hidden;
 
     @media (max-width: $tablet-width) {
+      grid-column: initial;
+      grid-row: initial;
+      place-self: initial;
       width: 416px;
       height: 197px;
-
       position: absolute;
       top: 50%;
       left: 35px;
       transform: translate(0, -50%);
-
-      grid-column: initial;
-      grid-row: initial;
-      place-self: initial;
     }
 
     @media (max-width: $mobile-width) {

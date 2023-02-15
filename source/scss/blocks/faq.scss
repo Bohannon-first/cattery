@@ -3,12 +3,12 @@
   padding: 73px 0;
 
   @media (max-width: $tablet-width) {
-    padding-top: 136px;
+    padding-top: 144px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 39px;
+    padding-bottom: 53px;
   }
 
   // faq__container
@@ -23,7 +23,7 @@
     margin-bottom: 23px;
 
     @media (max-width: $tablet-width) {
-      margin-bottom: 33px;
+      margin-bottom: 20px;
     }
   }
 
@@ -34,6 +34,7 @@
     @media (max-width: $mobile-width) {
       margin-bottom: 40px;
       text-align: center;
+      width: 200px;
     }
   }
 
@@ -61,7 +62,6 @@
     min-height: 110px;
     cursor: pointer;
     user-select: none;
-
     transition: all 0.5s ease-out;
 
     @media (max-width: $tablet-width) {
@@ -110,7 +110,6 @@
 
     @media (max-width: $mobile-width) {
       font-size: 0;
-      // content: '';
     }
   }
 
@@ -153,7 +152,6 @@
     width: 18px;
     height: 2px;
     background-color: $color-desc;
-
     transition: all 0.5s ease-out;
 
     @media (max-width: $tablet-width) {
@@ -187,7 +185,6 @@
     margin-bottom: 15px;
   }
 }
-
 
 // Анимация открытия аккордеона в блоке faq
 @keyframes showFaqAnswer {
