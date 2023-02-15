@@ -8,7 +8,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 60px;
+    padding-bottom: 53px;
+    padding-top: 54px;
   }
 
   // pets__container
@@ -20,9 +21,9 @@
   &__secondary-title {
     margin-bottom: 23px;
 
-    @media (max-width: $mobile-width) {
-      margin-bottom: 35px;
-    }
+    // @media (max-width: $mobile-width) {
+    //   margin-bottom: 23px;
+    // }
   }
 
   // pets__section-description
@@ -30,7 +31,7 @@
     margin-bottom: 33px;
 
     @media (max-width: $mobile-width) {
-      margin-bottom: 40px;
+      margin-bottom: 3px;
     }
   }
 

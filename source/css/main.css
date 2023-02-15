@@ -1320,6 +1320,8 @@ img {
     display: flex;
     align-items: center;
     min-height: 105px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .page-footer__logo {
@@ -1346,17 +1348,17 @@ img {
 
   .page-header__content {
     width: inherit;
-    margin-top: 57px;
+    margin-top: 51px;
     text-align: center;
   }
 
   .page-header__section-description-city {
-    margin-bottom: 20px;
+    margin-bottom: 9px;
   }
 
   .page-header__main-button {
     margin: 0;
-    margin-top: 40px;
+    margin-top: 33px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1391,15 +1393,12 @@ img {
   }
 
   .pets {
-    padding-bottom: 60px;
-  }
-
-  .pets__secondary-title {
-    margin-bottom: 35px;
+    padding-bottom: 53px;
+    padding-top: 54px;
   }
 
   .pets__section-description {
-    margin-bottom: 40px;
+    margin-bottom: 3px;
   }
 
   .pets__main-button {
@@ -1449,12 +1448,12 @@ img {
 
   .features__container {
     background-image: url("../img/background/Mobile/features-bgc-mein-kun-mobile.png");
-    min-height: 810px;
-    background-position: center 220px;
+    min-height: 784px;
+    background-position: center 191px;
   }
 
   .features__secondary-title {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     text-align: center;
   }
 
@@ -1528,13 +1527,14 @@ img {
   }
 
   .advantages {
-    padding-top: 60px;
+    padding-top: 55px;
     padding-bottom: 60px;
   }
 
   .advantages__secondary-title {
-    margin-bottom: 35px;
+    margin-bottom: 23px;
     text-align: center;
+    width: 230px;
   }
 
   .advantages__section-description {
@@ -1569,11 +1569,12 @@ img {
   }
 
   .care {
-    padding: 60px 0;
+    padding-top: 51px;
+    padding-bottom: 60px;
   }
 
   .care__secondary-title {
-    margin-bottom: 37px;
+    margin-bottom: 32px;
   }
 
   .care__secondary-title br {
@@ -1585,7 +1586,8 @@ img {
   }
 
   .care-list__item {
-    padding: 25px 53px 25px 25px;
+    padding: 21px 53px 21px 25px;
+    min-height: 160px;
   }
 
   .care-list__title {
@@ -1607,12 +1609,12 @@ img {
   }
 
   .our-team {
-    padding-top: 60px;
+    padding-top: 53px;
     padding-bottom: 60px;
   }
 
   .our-team__secondary-title {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
 
   .our-team__section-description {
@@ -1669,6 +1671,7 @@ img {
   .main-slider__name-employee {
     font-size: 18px;
     line-height: 19px;
+    margin-bottom: 3px;
   }
 
   .main-slider__employee-position {
@@ -1729,13 +1732,14 @@ img {
   }
 
   .faq {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 39px;
+    padding-bottom: 53px;
   }
 
   .faq__section-description {
     margin-bottom: 40px;
     text-align: center;
+    width: 200px;
   }
 
   .faq__list {
@@ -1797,13 +1801,17 @@ img {
   }
 
   .page-footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
   .page-footer__container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .page-footer__container > * {
+    margin-bottom: 15px;
   }
 
   .page-footer__container > *:not(:nth-child(4n)) {
@@ -1818,7 +1826,7 @@ img {
 
   .page-footer__socials {
     order: 3;
-    margin-bottom: 26px;
+    margin-bottom: 15px;
   }
 
   .page-footer__address {
@@ -1829,7 +1837,7 @@ img {
   .page-footer__phone {
     font-weight: 400;
     line-height: 19px;
-    margin-bottom: 26px;
+    margin-bottom: 15px;
     order: 2;
   }
 }
