@@ -1,6 +1,6 @@
 .page-header {
   background-color: $color-bgc-header;
-  background-image: url('../img/background/Desktop/bgc-header-desktop.png');
+  background-image: url('../img/background/Desktop/bgc-header-desktop.webp');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
@@ -8,14 +8,14 @@
   padding-top: 46px;
 
   @media (max-width: $tablet-width) {
-    background-image: url('../img/background/Tablet/bgc-header-tablet.png');
+    background-image: url('../img/background/Tablet/bgc-header-tablet.webp');
     min-height: 595px;
     padding-top: 28px;
     padding-bottom: 46px;
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url('../img/background/Mobile/bgc-header-mobile.png');
+    background-image: url('../img/background/Mobile/bgc-header-mobile.webp');
     min-height: 617px;
     background-position: right bottom;
     background-size: auto;

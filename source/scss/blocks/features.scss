@@ -9,13 +9,13 @@
     justify-content: flex-start;
     align-items: center;
     min-height: 925px;
-    background-image: url('../img/background/Desktop/features-bgc-mein-kun.png');
+    background-image: url('../img/background/Desktop/features-bgc-mein-kun.webp');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 59% 33px;
 
     @media (max-width: $tablet-width) {
-      background-image: url('../img/background/Tablet/features-bgc-mein-kun-tablet.png');
+      background-image: url('../img/background/Tablet/features-bgc-mein-kun-tablet.webp');
       background-size: auto;
       min-height: 748px;
       background-position: 53% 139px;
@@ -23,7 +23,7 @@
     }
 
     @media (max-width: $mobile-width) {
-      background-image: url('../img/background/Mobile/features-bgc-mein-kun-mobile.png');
+      background-image: url('../img/background/Mobile/features-bgc-mein-kun-mobile.webp');
       min-height: 784px;
       background-position: center 191px;
     }

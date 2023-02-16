@@ -120,7 +120,7 @@ img {
 
 .page-header {
   background-color: #181617;
-  background-image: url("../img/background/Desktop/bgc-header-desktop.png");
+  background-image: url("../img/background/Desktop/bgc-header-desktop.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
@@ -339,7 +339,7 @@ img {
   justify-content: flex-start;
   align-items: center;
   min-height: 925px;
-  background-image: url("../img/background/Desktop/features-bgc-mein-kun.png");
+  background-image: url("../img/background/Desktop/features-bgc-mein-kun.webp");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 59% 33px;
@@ -490,7 +490,7 @@ img {
 }
 
 .care {
-  background-image: url("../img/background/Desktop/bgc-care.png");
+  background-image: url("../img/background/Desktop/bgc-care.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -989,7 +989,7 @@ img {
   }
 
   .page-header {
-    background-image: url("../img/background/Tablet/bgc-header-tablet.png");
+    background-image: url("../img/background/Tablet/bgc-header-tablet.webp");
     min-height: 595px;
     padding-top: 28px;
     padding-bottom: 46px;
@@ -1066,7 +1066,7 @@ img {
   }
 
   .features__container {
-    background-image: url("../img/background/Tablet/features-bgc-mein-kun-tablet.png");
+    background-image: url("../img/background/Tablet/features-bgc-mein-kun-tablet.webp");
     background-size: auto;
     min-height: 748px;
     background-position: 53% 139px;
@@ -1340,7 +1340,7 @@ img {
   }
 
   .page-header {
-    background-image: url("../img/background/Mobile/bgc-header-mobile.png");
+    background-image: url("../img/background/Mobile/bgc-header-mobile.webp");
     min-height: 617px;
     background-position: right bottom;
     background-size: auto;
@@ -1447,7 +1447,7 @@ img {
   }
 
   .features__container {
-    background-image: url("../img/background/Mobile/features-bgc-mein-kun-mobile.png");
+    background-image: url("../img/background/Mobile/features-bgc-mein-kun-mobile.webp");
     min-height: 784px;
     background-position: center 191px;
   }
@@ -1548,7 +1548,7 @@ img {
   }
 
   .advantages-list__item {
-    height: 100%;
+    height: 248px;
     padding: 15px 15px;
   }
 
