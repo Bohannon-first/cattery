@@ -2,6 +2,16 @@
   min-height: 302px;
   background-color: $color-secondary-bgc;
 
+  // page-footer__socials-link
+  // page-footer__socials-svg
+  &__socials-link &__socials-svg {
+    fill: $color-desc;
+  }
+
+  &__socials-link:hover &__socials-svg {
+    fill: $main-white;
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -96,6 +106,13 @@
     font-weight: $roboto-regular;
     font-size: $text-secondary-size;
     color: $color-text-address;
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: $color-desc;
+      transition: color 0.3s ease-out;
+    }
 
     @media (max-width: $mobile-width) {
       line-height: $mobile-main-interlining;
@@ -108,6 +125,12 @@
     font-weight: $roboto-bold;
     font-size: $text-secondary-size;
     color: $color-text-phone;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: $color-desc;
+      transition: color 0.3s ease-out;
+    }
 
     @media (max-width: $mobile-width) {
       font-weight: $roboto-regular;

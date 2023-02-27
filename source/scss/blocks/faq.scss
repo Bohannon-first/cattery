@@ -64,6 +64,10 @@
     user-select: none;
     transition: all 0.5s ease-out;
 
+    &:hover {
+      background-color: $color-bgc-header;
+    }
+
     @media (max-width: $tablet-width) {
       min-height: 77px;
       margin-bottom: 23px;

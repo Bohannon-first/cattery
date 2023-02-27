@@ -116,6 +116,10 @@
         line-height: $mobile-main-interlining;
       }
     }
+
+    [data-bs-target]:hover {
+      opacity: 1;
+    }
   }
 
   // Стилизация слайдов в слайдере в блоке pets

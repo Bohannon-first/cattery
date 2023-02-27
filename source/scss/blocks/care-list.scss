@@ -23,6 +23,12 @@
     padding: 38px 78px 20px 59px;
     cursor: pointer;
     user-select: none;
+    transition: background-color 0.3s ease-out;
+
+    &:hover {
+      background-color: $color-bgc-header;
+      transition: background-color 0.3s ease-out;
+    }
 
     @media (max-width: $tablet-width) {
       width: initial;

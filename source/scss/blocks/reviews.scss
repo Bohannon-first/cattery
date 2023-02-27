@@ -74,6 +74,12 @@
     width: 28px;
     height: 28px;
     border: 0.5px solid $color-desc;
+    transition: border-color 0.3s ease-out;
+  }
+
+  &__socials__item:hover {
+    border-color: $main-white;
+    transition: border-color 0.3s ease-out;
   }
 
   &__socials__item:not(:first-child) {
@@ -86,6 +92,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    svg {
+      fill: $color-desc;
+    }
+  }
+
+  &__socials-link:hover svg {
+    fill: $main-white;
   }
 
   .main-slider__item.active {

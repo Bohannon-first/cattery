@@ -1,6 +1,16 @@
 .logo {
   margin: 0 auto;
 
+  &__svg {
+    fill: $color-desc;
+    transition: fill 0.3s ease-out;
+  }
+
+  &__svg:hover {
+    fill: $main-white;
+    transition: fill 0.3s ease-out;
+  }
+
   // logo__svg--mobile
   &__svg--mobile {
     display: none;
