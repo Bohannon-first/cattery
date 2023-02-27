@@ -107,6 +107,16 @@ img {
   left: -100px;
 }
 
+.socials__link svg {
+  fill: #ffffff;
+  transition: fill 0.3s ease-out;
+}
+
+.socials__link:hover svg {
+  fill: #a07B50;
+  transition: fill 0.3s ease-out;
+}
+
 .socials::before {
   position: absolute;
   content: "";
@@ -195,6 +205,16 @@ img {
   margin: 0 auto;
 }
 
+.logo__svg {
+  fill: #a07B50;
+  transition: fill 0.3s ease-out;
+}
+
+.logo__svg:hover {
+  fill: #ffffff;
+  transition: fill 0.3s ease-out;
+}
+
 .logo__svg--mobile {
   display: none;
 }
@@ -260,6 +280,10 @@ img {
   color: #ffffff;
   margin-right: 57px;
   text-indent: 0;
+}
+
+.pets__indicators [data-bs-target]:hover {
+  opacity: 1;
 }
 
 .pets .carousel-item-next,
@@ -523,6 +547,12 @@ img {
   padding: 38px 78px 20px 59px;
   cursor: pointer;
   user-select: none;
+  transition: background-color 0.3s ease-out;
+}
+
+.care-list__item:hover {
+  background-color: #181617;
+  transition: background-color 0.3s ease-out;
 }
 
 .care-list__rules-item {
@@ -770,6 +800,10 @@ img {
   transition: all 0.5s ease-out;
 }
 
+.faq__list-item:hover {
+  background-color: #181617;
+}
+
 .faq__question {
   transform: translate(0, -50%);
 }
@@ -894,6 +928,12 @@ img {
   width: 28px;
   height: 28px;
   border: 0.5px solid #a07B50;
+  transition: border-color 0.3s ease-out;
+}
+
+.reviews__socials__item:hover {
+  border-color: #ffffff;
+  transition: border-color 0.3s ease-out;
 }
 
 .reviews__socials__item:not(:first-child) {
@@ -907,6 +947,14 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.reviews__socials-link svg {
+  fill: #a07B50;
+}
+
+.reviews__socials-link:hover svg {
+  fill: #ffffff;
+}
+
 .reviews .main-slider__item.active {
   justify-content: center;
 }
@@ -914,6 +962,14 @@ img {
 .page-footer {
   min-height: 302px;
   background-color: #151313;
+}
+
+.page-footer__socials-link .page-footer__socials-svg {
+  fill: #a07B50;
+}
+
+.page-footer__socials-link:hover .page-footer__socials-svg {
+  fill: #ffffff;
 }
 
 .page-footer__container {
@@ -959,12 +1015,25 @@ img {
   font-weight: 400;
   font-size: 14px;
   color: rgba(253, 242, 230, 0.83);
+  cursor: pointer;
+  transition: color 0.3s ease-out;
+}
+
+.page-footer__address:hover {
+  color: #a07B50;
+  transition: color 0.3s ease-out;
 }
 
 .page-footer__phone {
   font-weight: 700;
   font-size: 14px;
   color: #fdf2e6;
+  transition: color 0.3s ease-out;
+}
+
+.page-footer__phone:hover {
+  color: #a07B50;
+  transition: color 0.3s ease-out;
 }
 
 @media (max-width: 1159px) {
